@@ -1,0 +1,588 @@
+Archive member included because of file (symbol)
+
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup.o (__main)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_ctype_init)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_init_alloc)
+
+Allocating common symbols
+Common symbol       size              file
+
+display_buffer      0x20              ./src/lcd/lcd.o
+rtcs_i              0x1               ./src/RTCS/schedule.o
+task_state          0x6               ./src/RTCS/schedule.o
+events              0x1               ./src/event/event.o
+__heaps             0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+__end_of_heap       0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+task_time           0xc               ./src/RTCS/schedule.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/watch/watch.o
+ .data          0x00000000        0x0 ./src/watch/watch.o
+ .bss           0x00000000        0x0 ./src/watch/watch.o
+ .bss.watch_display_state
+                0x00000000        0x0 ./src/watch/watch.o
+ .text          0x00000000        0x0 ./src/cr_startup.o
+ .data          0x00000000        0x0 ./src/cr_startup.o
+ .bss           0x00000000        0x0 ./src/cr_startup.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 ./src/lcd/lcd.o
+ .data          0x00000000        0x0 ./src/lcd/lcd.o
+ .bss           0x00000000        0x0 ./src/lcd/lcd.o
+ .text.display_buffer_write_string
+                0x00000000        0x0 ./src/lcd/lcd.o
+ .text          0x00000000        0x0 ./src/lcd/lcd_port.o
+ .data          0x00000000        0x0 ./src/lcd/lcd_port.o
+ .bss           0x00000000        0x0 ./src/lcd/lcd_port.o
+ .text          0x00000000        0x0 ./src/event/event.o
+ .data          0x00000000        0x0 ./src/event/event.o
+ .bss           0x00000000        0x0 ./src/event/event.o
+ .text.event_init
+                0x00000000        0x0 ./src/event/event.o
+ .text          0x00000000        0x0 ./src/cpu/cpu.o
+ .data          0x00000000        0x0 ./src/cpu/cpu.o
+ .bss           0x00000000        0x0 ./src/cpu/cpu.o
+ .text          0x00000000        0x0 ./src/RTCS/schedule.o
+ .data          0x00000000        0x0 ./src/RTCS/schedule.o
+ .bss           0x00000000        0x0 ./src/RTCS/schedule.o
+ .bss.semaphores
+                0x00000000        0x0 ./src/RTCS/schedule.o
+ .text._signal_sem
+                0x00000000        0x0 ./src/RTCS/schedule.o
+ .text._clear_sem
+                0x00000000        0x0 ./src/RTCS/schedule.o
+ .text._test_sem
+                0x00000000        0x0 ./src/RTCS/schedule.o
+ .text._time_status
+                0x00000000        0x0 ./src/RTCS/schedule.o
+ .text          0x00000000        0x0 ./src/RTCS/systick.o
+ .data          0x00000000        0x0 ./src/RTCS/systick.o
+ .bss           0x00000000        0x0 ./src/RTCS/systick.o
+ .text          0x00000000        0x0 ./src/LED/LED.o
+ .data          0x00000000        0x0 ./src/LED/LED.o
+ .bss           0x00000000        0x0 ./src/LED/LED.o
+ .text          0x00000000        0x0 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+ .data          0x00000000        0x0 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+ .bss           0x00000000        0x0 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._start_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._end_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash_256       0x00000000         0x00040000         xr
+RAM_64           0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/watch/watch.o
+LOAD ./src/cr_startup.o
+LOAD ./src/main.o
+LOAD ./src/lcd/lcd.o
+LOAD ./src/lcd/lcd_port.o
+LOAD ./src/event/event.o
+LOAD ./src/cpu/cpu.o
+LOAD ./src/RTCS/schedule.o
+LOAD ./src/RTCS/systick.o
+LOAD ./src/LED/LED.o
+LOAD ./src/Drehimpulsgeber/Drehimpulsgeber.o
+START GROUP
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libcr_eabihelpers.a
+END GROUP
+                0x00040000                __top_MFlash_256 = 0x40000
+                0x20010000                __top_RAM_64 = 0x20010000
+
+.text           0x00000000     0x1d48
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xf0 ./src/cr_startup.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text.watch_update_display
+                0x000000f0      0x1c8 ./src/watch/watch.o
+                0x000000f0                watch_update_display
+ .text.watch_run
+                0x000002b8       0xd0 ./src/watch/watch.o
+                0x000002b8                watch_run
+ .text.watch_adjust_time
+                0x00000388      0x17c ./src/watch/watch.o
+                0x00000388                watch_adjust_time
+ .text.init_watch_task
+                0x00000504       0x40 ./src/watch/watch.o
+                0x00000504                init_watch_task
+ .text.watch_task
+                0x00000544      0x11c ./src/watch/watch.o
+                0x00000544                watch_task
+ .text.init_blink_task
+                0x00000660       0x14 ./src/watch/watch.o
+                0x00000660                init_blink_task
+ .text.blink_task
+                0x00000674       0x98 ./src/watch/watch.o
+                0x00000674                blink_task
+ .text.ResetISR
+                0x0000070c       0x68 ./src/cr_startup.o
+                0x0000070c                ResetISR
+ .text.NmiSR    0x00000774        0x8 ./src/cr_startup.o
+ .text.FaultISR
+                0x0000077c        0x8 ./src/cr_startup.o
+ .text.IntDefaultHandler
+                0x00000784        0x8 ./src/cr_startup.o
+ .text.init_alive_task
+                0x0000078c       0x88 ./src/main.o
+                0x0000078c                init_alive_task
+ .text.alive_task
+                0x00000814       0x28 ./src/main.o
+                0x00000814                alive_task
+ .text.main     0x0000083c       0x1c ./src/main.o
+                0x0000083c                main
+ .text.display_buffer_write_char
+                0x00000858       0x40 ./src/lcd/lcd.o
+                0x00000858                display_buffer_write_char
+ .text.lcd_function
+                0x00000898       0x28 ./src/lcd/lcd.o
+                0x00000898                lcd_function
+ .text.display_buffer_goto_xy
+                0x000008c0       0x54 ./src/lcd/lcd.o
+                0x000008c0                display_buffer_goto_xy
+ .text.lcd_init_display
+                0x00000914       0xf0 ./src/lcd/lcd.o
+                0x00000914                lcd_init_display
+ .text.init_lcd_task
+                0x00000a04       0x1c ./src/lcd/lcd.o
+                0x00000a04                init_lcd_task
+ .text.lcd_task
+                0x00000a20       0xfc ./src/lcd/lcd.o
+                0x00000a20                lcd_task
+ .text.lcd_rs_low
+                0x00000b1c       0x24 ./src/lcd/lcd_port.o
+                0x00000b1c                lcd_rs_low
+ .text.lcd_rs_high
+                0x00000b40       0x24 ./src/lcd/lcd_port.o
+                0x00000b40                lcd_rs_high
+ .text.lcd_strobe
+                0x00000b64       0x68 ./src/lcd/lcd_port.o
+                0x00000b64                lcd_strobe
+ .text.lcd_write_port
+                0x00000bcc       0x3c ./src/lcd/lcd_port.o
+                0x00000bcc                lcd_write_port
+ .text.lcd_write_4bit_mode
+                0x00000c08       0x6c ./src/lcd/lcd_port.o
+                0x00000c08                lcd_write_4bit_mode
+ .text.lcd_port_setup
+                0x00000c74      0x190 ./src/lcd/lcd_port.o
+                0x00000c74                lcd_port_setup
+ .text.lcd_delay_us
+                0x00000e04       0x3c ./src/lcd/lcd_port.o
+                0x00000e04                lcd_delay_us
+ .text.event_set
+                0x00000e40       0x28 ./src/event/event.o
+                0x00000e40                event_set
+ .text.event_get
+                0x00000e68       0x24 ./src/event/event.o
+                0x00000e68                event_get
+ .text.clk_system_init
+                0x00000e8c      0x180 ./src/cpu/cpu.o
+                0x00000e8c                clk_system_init
+ .text.enable_global_int
+                0x0000100c        0xc ./src/cpu/cpu.o
+                0x0000100c                enable_global_int
+ .text.disable_global_int
+                0x00001018        0xc ./src/cpu/cpu.o
+                0x00001018                disable_global_int
+ .text._wait    0x00001024       0x34 ./src/RTCS/schedule.o
+                0x00001024                _wait
+ .text._stop    0x00001058       0x28 ./src/RTCS/schedule.o
+                0x00001058                _stop
+ .text._start   0x00001080       0x50 ./src/RTCS/schedule.o
+                0x00001080                _start
+ .text.task_setup
+                0x000010d0       0x50 ./src/RTCS/schedule.o
+                0x000010d0                task_setup
+ .text.init_tasks
+                0x00001120       0x58 ./src/RTCS/schedule.o
+                0x00001120                init_tasks
+ .text.start_rtcs_scheduler
+                0x00001178      0x170 ./src/RTCS/schedule.o
+                0x00001178                start_rtcs_scheduler
+ .text.systick_isr
+                0x000012e8       0x24 ./src/RTCS/systick.o
+                0x000012e8                systick_isr
+ .text.systick_init
+                0x0000130c       0xd0 ./src/RTCS/systick.o
+                0x0000130c                systick_init
+ .text.systick_get
+                0x000013dc       0x2c ./src/RTCS/systick.o
+                0x000013dc                systick_get
+ .text.systick_decrement
+                0x00001408       0x28 ./src/RTCS/systick.o
+                0x00001408                systick_decrement
+ .text.init_LED_task
+                0x00001430       0xcc ./src/LED/LED.o
+                0x00001430                init_LED_task
+ .text.LED_task
+                0x000014fc      0x1b0 ./src/LED/LED.o
+                0x000014fc                LED_task
+ .text.init_drehimpulsgeber_task
+                0x000016ac       0xe8 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+                0x000016ac                init_drehimpulsgeber_task
+ .text.drehimpulsgeber_state_machine
+                0x00001794      0x1dc ./src/Drehimpulsgeber/Drehimpulsgeber.o
+                0x00001794                drehimpulsgeber_state_machine
+ .text.drehimpulsgeber_task
+                0x00001970       0x44 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+                0x00001970                drehimpulsgeber_task
+ .text.__weak_main
+                0x000019b4       0x10 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                0x000019b4                __main
+                0x000019b4                __weak_main
+ .text          0x000019c4      0x36c c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x000019c4                _start_module_ctype
+                0x00001a98                islower
+                0x00001b88                tolower
+                0x00001ae8                ispunct
+                0x00001b10                isspace
+                0x00001d24                _end_module_ctype
+                0x00001b60                isxdigit
+                0x00001ca0                _ctype_init
+                0x00001b38                isupper
+                0x000019f8                isalpha
+                0x00001a70                isgraph
+                0x000019d0                isalnum
+                0x00001ac0                isprint
+                0x00001c00                _set_ctype_8859
+                0x00001a48                isdigit
+                0x00001a20                iscntrl
+                0x00001bc4                toupper
+ .text._init_alloc
+                0x00001d30       0x18 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x00001d30                _init_alloc
+ *(.rodata*)
+
+.glue_7         0x00001d48        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00001d48        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00001d48        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00001d48        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00001d48                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001d48                __exidx_end = .
+                0x00001d48                _etext = .
+
+.data           0x20000000      0x239 load address 0x00001d48
+                0x20000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.watch_state
+                0x20000000        0x1 ./src/watch/watch.o
+                0x20000000                watch_state
+ .data.watch_set_state
+                0x20000001        0x1 ./src/watch/watch.o
+                0x20000001                watch_set_state
+ *fill*         0x20000002        0x2 00
+ .data.init_task
+                0x20000004       0x18 ./src/RTCS/schedule.o
+                0x20000004                init_task
+ .data.task     0x2000001c       0x18 ./src/RTCS/schedule.o
+                0x2000001c                task
+ .data.number   0x20000034        0x1 ./src/LED/LED.o
+                0x20000034                number
+ .data          0x20000035      0x204 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x20000035                __ctype
+                0x20000239                _edata = .
+
+.bss            0x2000023c       0x48 load address 0x00001f81
+                0x2000023c                _bss = .
+ *(.bss*)
+ .bss.blink_visible
+                0x2000023c        0x1 ./src/watch/watch.o
+                0x2000023c                blink_visible
+ .bss.sec       0x2000023d        0x1 ./src/watch/watch.o
+                0x2000023d                sec
+ .bss.min       0x2000023e        0x1 ./src/watch/watch.o
+                0x2000023e                min
+ .bss.hour      0x2000023f        0x1 ./src/watch/watch.o
+                0x2000023f                hour
+ .bss.SWT       0x20000240        0x2 ./src/watch/watch.o
+                0x20000240                SWT
+ .bss.col_pointer
+                0x20000242        0x1 ./src/lcd/lcd.o
+                0x20000242                col_pointer
+ .bss.row_pointer
+                0x20000243        0x1 ./src/lcd/lcd.o
+                0x20000243                row_pointer
+ .bss.current_task
+                0x20000244        0x1 ./src/RTCS/schedule.o
+                0x20000244                current_task
+ .bss.tick      0x20000245        0x1 ./src/RTCS/systick.o
+                0x20000245                tick
+ .bss.button_state
+                0x20000246        0x1 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+                0x20000246                button_state
+ *(COMMON)
+ COMMON         0x20000247       0x20 ./src/lcd/lcd.o
+                0x20000247                display_buffer
+ COMMON         0x20000267        0x1 ./src/event/event.o
+                0x20000267                events
+ COMMON         0x20000268       0x14 ./src/RTCS/schedule.o
+                0x20000268                rtcs_i
+                0x20000269                task_state
+                0x20000270                task_time
+ COMMON         0x2000027c        0x8 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x2000027c                __heaps
+                0x20000280                __end_of_heap
+                0x20000284                _ebss = .
+
+.cr_heap        0x20000284        0x0 load address 0x00001f81
+                0x20000284                end = .
+                0x20000284                _pvHeapStart = .
+                0x20010000                _vRamTop = __top_RAM_64
+                0x2000fff0                _vStackTop = (_vRamTop - 0x10)
+OUTPUT(ur.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0x782
+ .debug_abbrev  0x00000000       0xbd ./src/watch/watch.o
+ .debug_abbrev  0x000000bd       0xbf ./src/cr_startup.o
+ .debug_abbrev  0x0000017c       0x8d ./src/main.o
+ .debug_abbrev  0x00000209       0xe6 ./src/lcd/lcd.o
+ .debug_abbrev  0x000002ef       0x9e ./src/lcd/lcd_port.o
+ .debug_abbrev  0x0000038d       0xcb ./src/event/event.o
+ .debug_abbrev  0x00000458       0x67 ./src/cpu/cpu.o
+ .debug_abbrev  0x000004bf      0x107 ./src/RTCS/schedule.o
+ .debug_abbrev  0x000005c6       0x7e ./src/RTCS/systick.o
+ .debug_abbrev  0x00000644       0x9d ./src/LED/LED.o
+ .debug_abbrev  0x000006e1       0xa1 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_info     0x00000000     0x1151
+ .debug_info    0x00000000      0x28d ./src/watch/watch.o
+ .debug_info    0x0000028d      0x14e ./src/cr_startup.o
+ .debug_info    0x000003db       0xdc ./src/main.o
+ .debug_info    0x000004b7      0x27a ./src/lcd/lcd.o
+ .debug_info    0x00000731      0x16e ./src/lcd/lcd_port.o
+ .debug_info    0x0000089f      0x163 ./src/event/event.o
+ .debug_info    0x00000a02       0xce ./src/cpu/cpu.o
+ .debug_info    0x00000ad0      0x317 ./src/RTCS/schedule.o
+ .debug_info    0x00000de7       0xfc ./src/RTCS/systick.o
+ .debug_info    0x00000ee3      0x105 ./src/LED/LED.o
+ .debug_info    0x00000fe8      0x169 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_line     0x00000000     0x11e5
+ .debug_line    0x00000000      0x2a3 ./src/watch/watch.o
+ .debug_line    0x000002a3       0xd6 ./src/cr_startup.o
+ .debug_line    0x00000379      0x275 ./src/main.o
+ .debug_line    0x000005ee      0x1d1 ./src/lcd/lcd.o
+ .debug_line    0x000007bf      0x1a9 ./src/lcd/lcd_port.o
+ .debug_line    0x00000968       0xdd ./src/event/event.o
+ .debug_line    0x00000a45      0x103 ./src/cpu/cpu.o
+ .debug_line    0x00000b48      0x196 ./src/RTCS/schedule.o
+ .debug_line    0x00000cde       0xf6 ./src/RTCS/systick.o
+ .debug_line    0x00000dd4      0x1bb ./src/LED/LED.o
+ .debug_line    0x00000f8f      0x256 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_macinfo  0x00000000    0xd7fc9
+ .debug_macinfo
+                0x00000000    0x1ae0d ./src/watch/watch.o
+ .debug_macinfo
+                0x0001ae0d      0xf8c ./src/cr_startup.o
+ .debug_macinfo
+                0x0001bd99    0x19b0d ./src/main.o
+ .debug_macinfo
+                0x000358a6     0x246b ./src/lcd/lcd.o
+ .debug_macinfo
+                0x00037d11    0x1a935 ./src/lcd/lcd_port.o
+ .debug_macinfo
+                0x00052646     0x1f87 ./src/event/event.o
+ .debug_macinfo
+                0x000545cd    0x1a8f4 ./src/cpu/cpu.o
+ .debug_macinfo
+                0x0006eec1    0x19b22 ./src/RTCS/schedule.o
+ .debug_macinfo
+                0x000889e3    0x19a1e ./src/RTCS/systick.o
+ .debug_macinfo
+                0x000a2401    0x1adde ./src/LED/LED.o
+ .debug_macinfo
+                0x000bd1df    0x1adea ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_frame    0x00000000      0x680
+ .debug_frame   0x00000000       0xe0 ./src/watch/watch.o
+ .debug_frame   0x000000e0       0x78 ./src/cr_startup.o
+ .debug_frame   0x00000158       0x68 ./src/main.o
+ .debug_frame   0x000001c0       0xe0 ./src/lcd/lcd.o
+ .debug_frame   0x000002a0       0xcc ./src/lcd/lcd_port.o
+ .debug_frame   0x0000036c       0x64 ./src/event/event.o
+ .debug_frame   0x000003d0       0x5c ./src/cpu/cpu.o
+ .debug_frame   0x0000042c      0x12c ./src/RTCS/schedule.o
+ .debug_frame   0x00000558       0x74 ./src/RTCS/systick.o
+ .debug_frame   0x000005cc       0x48 ./src/LED/LED.o
+ .debug_frame   0x00000614       0x6c ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_loc      0x00000000      0xa67
+ .debug_loc     0x00000000      0x151 ./src/watch/watch.o
+ .debug_loc     0x00000151       0xb8 ./src/cr_startup.o
+ .debug_loc     0x00000209       0x8d ./src/main.o
+ .debug_loc     0x00000296      0x169 ./src/lcd/lcd.o
+ .debug_loc     0x000003ff      0x15d ./src/lcd/lcd_port.o
+ .debug_loc     0x0000055c       0xa5 ./src/event/event.o
+ .debug_loc     0x00000601       0x8d ./src/cpu/cpu.o
+ .debug_loc     0x0000068e      0x21a ./src/RTCS/schedule.o
+ .debug_loc     0x000008a8       0xb8 ./src/RTCS/systick.o
+ .debug_loc     0x00000960       0x62 ./src/LED/LED.o
+ .debug_loc     0x000009c2       0xa5 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_pubnames
+                0x00000000      0x59e
+ .debug_pubnames
+                0x00000000      0x104 ./src/watch/watch.o
+ .debug_pubnames
+                0x00000104       0x30 ./src/cr_startup.o
+ .debug_pubnames
+                0x00000134       0x3e ./src/main.o
+ .debug_pubnames
+                0x00000172       0xe3 ./src/lcd/lcd.o
+ .debug_pubnames
+                0x00000255       0x8f ./src/lcd/lcd_port.o
+ .debug_pubnames
+                0x000002e4       0x48 ./src/event/event.o
+ .debug_pubnames
+                0x0000032c       0x53 ./src/cpu/cpu.o
+ .debug_pubnames
+                0x0000037f      0x105 ./src/RTCS/schedule.o
+ .debug_pubnames
+                0x00000484       0x62 ./src/RTCS/systick.o
+ .debug_pubnames
+                0x000004e6       0x3c ./src/LED/LED.o
+ .debug_pubnames
+                0x00000522       0x7c ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_aranges  0x00000000      0x2b0
+ .debug_aranges
+                0x00000000       0x50 ./src/watch/watch.o
+ .debug_aranges
+                0x00000050       0x38 ./src/cr_startup.o
+ .debug_aranges
+                0x00000088       0x30 ./src/main.o
+ .debug_aranges
+                0x000000b8       0x50 ./src/lcd/lcd.o
+ .debug_aranges
+                0x00000108       0x50 ./src/lcd/lcd_port.o
+ .debug_aranges
+                0x00000158       0x30 ./src/event/event.o
+ .debug_aranges
+                0x00000188       0x30 ./src/cpu/cpu.o
+ .debug_aranges
+                0x000001b8       0x68 ./src/RTCS/schedule.o
+ .debug_aranges
+                0x00000220       0x38 ./src/RTCS/systick.o
+ .debug_aranges
+                0x00000258       0x28 ./src/LED/LED.o
+ .debug_aranges
+                0x00000280       0x30 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_ranges   0x00000000      0x258
+ .debug_ranges  0x00000000       0x48 ./src/watch/watch.o
+ .debug_ranges  0x00000048       0x30 ./src/cr_startup.o
+ .debug_ranges  0x00000078       0x28 ./src/main.o
+ .debug_ranges  0x000000a0       0x48 ./src/lcd/lcd.o
+ .debug_ranges  0x000000e8       0x48 ./src/lcd/lcd_port.o
+ .debug_ranges  0x00000130       0x28 ./src/event/event.o
+ .debug_ranges  0x00000158       0x28 ./src/cpu/cpu.o
+ .debug_ranges  0x00000180       0x60 ./src/RTCS/schedule.o
+ .debug_ranges  0x000001e0       0x30 ./src/RTCS/systick.o
+ .debug_ranges  0x00000210       0x20 ./src/LED/LED.o
+ .debug_ranges  0x00000230       0x28 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+
+.debug_str      0x00000000      0x683
+ .debug_str     0x00000000      0x214 ./src/watch/watch.o
+                                0x25e (size before relaxing)
+ .debug_str     0x00000214       0x79 ./src/cr_startup.o
+                                0x144 (size before relaxing)
+ .debug_str     0x0000028d       0x29 ./src/main.o
+                                0x105 (size before relaxing)
+ .debug_str     0x000002b6       0xd0 ./src/lcd/lcd.o
+                                0x1b5 (size before relaxing)
+ .debug_str     0x00000386       0x7e ./src/lcd/lcd_port.o
+                                0x166 (size before relaxing)
+ .debug_str     0x00000404       0x40 ./src/event/event.o
+                                0x157 (size before relaxing)
+ .debug_str     0x00000444       0x46 ./src/cpu/cpu.o
+                                0x11e (size before relaxing)
+ .debug_str     0x0000048a       0xe8 ./src/RTCS/schedule.o
+                                0x1df (size before relaxing)
+ .debug_str     0x00000572       0x52 ./src/RTCS/systick.o
+                                0x130 (size before relaxing)
+ .debug_str     0x000005c4       0x1f ./src/LED/LED.o
+                                0x146 (size before relaxing)
+ .debug_str     0x000005e3       0xa0 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+                                0x1d2 (size before relaxing)
+
+.comment        0x00000000      0x25a
+ .comment       0x00000000       0x2b ./src/watch/watch.o
+ .comment       0x0000002b       0x2b ./src/cr_startup.o
+ .comment       0x00000056       0x2b ./src/main.o
+ .comment       0x00000081       0x2b ./src/lcd/lcd.o
+ .comment       0x000000ac       0x2b ./src/lcd/lcd_port.o
+ .comment       0x000000d7       0x2b ./src/event/event.o
+ .comment       0x00000102       0x2b ./src/cpu/cpu.o
+ .comment       0x0000012d       0x2b ./src/RTCS/schedule.o
+ .comment       0x00000158       0x2b ./src/RTCS/systick.o
+ .comment       0x00000183       0x2b ./src/LED/LED.o
+ .comment       0x000001ae       0x2b ./src/Drehimpulsgeber/Drehimpulsgeber.o
+ .comment       0x000001d9       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .comment       0x00000204       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .comment       0x0000022f       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 ./src/watch/watch.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/cr_startup.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/main.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/lcd/lcd.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/lcd/lcd_port.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/event/event.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/cpu/cpu.o
+ .ARM.attributes
+                0x00000157       0x31 ./src/RTCS/schedule.o
+ .ARM.attributes
+                0x00000188       0x31 ./src/RTCS/systick.o
+ .ARM.attributes
+                0x000001b9       0x31 ./src/LED/LED.o
+ .ARM.attributes
+                0x000001ea       0x31 ./src/Drehimpulsgeber/Drehimpulsgeber.o
+ .ARM.attributes
+                0x0000021b       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x0000024c       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .ARM.attributes
+                0x0000027d       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
