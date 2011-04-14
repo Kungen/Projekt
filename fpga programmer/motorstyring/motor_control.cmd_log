@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 
+xst -intstyle ise -ifn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.xst" -ofn "C:/Users/troels/Documents/xilinx/motorstyring/motor_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc confile.ucf -p xc3s100e-tq144-4 motor_control.ngc motor_control.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o motor_control_map.ncd motor_control.ngd motor_control.pcf 
+par -w -intstyle ise -ol high -t 1 motor_control_map.ncd motor_control.ncd motor_control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motor_control.twx motor_control.ncd -o motor_control.twr motor_control.pcf -ucf confile.ucf 
+bitgen -intstyle ise -f motor_control.ut motor_control.ncd 

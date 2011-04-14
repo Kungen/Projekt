@@ -1,0 +1,28 @@
+if((GPIO_PORTC_DATA_R & (0x10)) && (GPIO_PORTB_DATA_R & (0x02)))
+  		{
+  			DPG_state = 1;
+  		}
+  		if(!(GPIO_PORTC_DATA_R & (0x10)) && !(GPIO_PORTB_DATA_R & (0x02)))
+  		{
+  			DPG_state = 2;
+  		}
+  		if(DPG_state == 1 && !(GPIO_PORTB_DATA_R & (0x02)))
+  		{
+  			nummer++;
+  			DPG_state = 0;
+  		}
+  		if(DPG_state == 1 && !(GPIO_PORTC_DATA_R & (0x10)))
+  		{
+  			nummer--;
+  			DPG_state = 0;
+  		}
+  		if(DPG_state == 2 && (GPIO_PORTB_DATA_R & (0x02)))
+  		{
+  			nummer++;
+  			DPG_state = 0;
+  		}
+  		if(DPG_state == 2 && (GPIO_PORTC_DATA_R & (0x10)))
+  		{
+  			nummer--;
+  			DPG_state = 0;
+  		}

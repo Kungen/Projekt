@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/troels/Documents/xilinx/motorstyring/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/troels/Documents/xilinx/motorstyring/xst"
+elaborate
+-ifn split4cif.prj
+-ifmt mixed

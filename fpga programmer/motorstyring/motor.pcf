@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map M.81d on Thu Mar 10 17:16:18 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Hall2" LOCATE = SITE "P93" LEVEL 1;
+COMP "motor2_direction" LOCATE = SITE "P86" LEVEL 1;
+COMP "motor1_direction" LOCATE = SITE "P59" LEVEL 1;
+COMP "motor1_enable" LOCATE = SITE "P74" LEVEL 1;
+COMP "motor1_power" LOCATE = SITE "P75" LEVEL 1;
+COMP "motor2_power" LOCATE = SITE "P77" LEVEL 1;
+COMP "motor2_enable" LOCATE = SITE "P76" LEVEL 1;
+COMP "A" LOCATE = SITE "P25" LEVEL 1;
+COMP "B" LOCATE = SITE "P16" LEVEL 1;
+COMP "C" LOCATE = SITE "P23" LEVEL 1;
+COMP "D" LOCATE = SITE "P21" LEVEL 1;
+COMP "E" LOCATE = SITE "P20" LEVEL 1;
+COMP "chose<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "F" LOCATE = SITE "P17" LEVEL 1;
+COMP "G" LOCATE = SITE "P83" LEVEL 1;
+COMP "chose<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "H" LOCATE = SITE "P22" LEVEL 1;
+COMP "chose<2>" LOCATE = SITE "P32" LEVEL 1;
+COMP "chose<3>" LOCATE = SITE "P26" LEVEL 1;
+COMP "Clk" LOCATE = SITE "P54" LEVEL 1;
+COMP "toggle1" LOCATE = SITE "P41" LEVEL 1;
+COMP "Hall1" LOCATE = SITE "P87" LEVEL 1;
+NET "Clk_BUFGP/IBUFG" BEL "Clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,109 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : motor_control.vf
+// /___/   /\     Timestamp : 03/11/2011 12:06:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/troels/Documents/xilinx/motorstyring/motor_control.vf -w C:/Users/troels/Documents/xilinx/motorstyring/motor_control.sch
+//Design Name: motor_control
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module motor_control(BTN3, 
+                     HClk, 
+                     JB1, 
+                     JB2, 
+                     A, 
+                     B, 
+                     C, 
+                     chose, 
+                     D, 
+                     E, 
+                     F, 
+                     G, 
+                     H, 
+                     JC1, 
+                     JC3, 
+                     JD1, 
+                     JD3, 
+                     JC2, 
+                     JD2);
+
+    input BTN3;
+    input HClk;
+    input JB1;
+    input JB2;
+   output A;
+   output B;
+   output C;
+   output [3:0] chose;
+   output D;
+   output E;
+   output F;
+   output G;
+   output H;
+   output JC1;
+   output JC3;
+   output JD1;
+   output JD3;
+    inout JC2;
+    inout JD2;
+   
+   wire [3:0] XLXN_5;
+   wire [3:0] XLXN_6;
+   wire [3:0] XLXN_7;
+   wire [3:0] XLXN_8;
+   wire XLXN_71;
+   wire [0:13] XLXN_87;
+   wire XLXN_90;
+   
+   DispController  XLXI_2 (.dot(), 
+                          .HClk(HClk), 
+                          .number1(XLXN_5[3:0]), 
+                          .number2(XLXN_6[3:0]), 
+                          .number3(XLXN_7[3:0]), 
+                          .number4(XLXN_8[3:0]), 
+                          .A(A), 
+                          .B(B), 
+                          .C(C), 
+                          .chose(chose[3:0]), 
+                          .Clk(XLXN_90), 
+                          .D(D), 
+                          .E(E), 
+                          .F(F), 
+                          .G(G), 
+                          .H(H));
+   motor  XLXI_4 (.Clk(HClk), 
+                 .pos_in(XLXN_87[0:13]), 
+                 .toggle1(XLXN_71), 
+                 .motor1_enable(JD3), 
+                 .motor1_power(JD1), 
+                 .motor2_enable(JC3), 
+                 .motor2_power(JC1), 
+                 .motor1_direction(JD2), 
+                 .motor2_direction(JC2));
+   toggleButton1  XLXI_5 (.button(BTN3), 
+                         .Clk(XLXN_90), 
+                         .toggle(XLXN_71));
+   PosMeasurer  XLXI_6 (.Clk(HClk), 
+                       .Hall1(JB1), 
+                       .Hall2(JB2), 
+                       .pos_out(XLXN_87[0:13]));
+   split4cif  XLXI_7 (.big_number(XLXN_87[0:13]), 
+                     .clk(HClk), 
+                     .number1(XLXN_5[3:0]), 
+                     .number2(XLXN_6[3:0]), 
+                     .number3(XLXN_7[3:0]), 
+                     .number4(XLXN_8[3:0]));
+endmodule

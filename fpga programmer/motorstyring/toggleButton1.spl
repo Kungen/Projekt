@@ -1,0 +1,6 @@
+[Inputs]
+button
+Clk
+[Outputs]
+toggle
+[BiDir]

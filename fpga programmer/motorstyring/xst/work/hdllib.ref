@@ -1,0 +1,11 @@
+EN posmeasurer NULL C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.vhd sub00/vhpl08 1299841754
+AR motor behavioral C:/Users/troels/Documents/xilinx/motorstyring/motor.vhd sub00/vhpl01 1299841753
+EN motor NULL C:/Users/troels/Documents/xilinx/motorstyring/motor.vhd sub00/vhpl00 1299841752
+AR dispcontroller behavioral C:/Users/troels/Documents/xilinx/motorstyring/DispController.vhd sub00/vhpl05 1299841751
+MO motor_control NULL motor_control.vf vlg35/motor__control.bin 1299841750
+AR togglebutton1 behavioral C:/Users/troels/Documents/xilinx/motorstyring/toggleButton1.vhd sub00/vhpl07 1299841759
+EN dispcontroller NULL C:/Users/troels/Documents/xilinx/motorstyring/DispController.vhd sub00/vhpl04 1299841750
+EN split4cif NULL C:/Users/troels/Documents/xilinx/motorstyring/split4cif.vhd sub00/vhpl02 1299841756
+AR split4cif behavioral C:/Users/troels/Documents/xilinx/motorstyring/split4cif.vhd sub00/vhpl03 1299841757
+AR posmeasurer behavioral C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.vhd sub00/vhpl09 1299841755
+EN togglebutton1 NULL C:/Users/troels/Documents/xilinx/motorstyring/toggleButton1.vhd sub00/vhpl06 1299841758

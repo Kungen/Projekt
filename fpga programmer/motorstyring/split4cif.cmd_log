@@ -1,0 +1,18 @@
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 
+vhdtdtfi -lib work split4cif.vhd -prj motorstyring -o split4cif.spl -module split4cif -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e split4cif.spl C:/Users/troels/Documents/xilinx/motorstyring/split4cif.sym 

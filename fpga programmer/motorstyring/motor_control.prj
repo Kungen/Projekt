@@ -1,0 +1,6 @@
+vhdl work "toggleButton1.vhd"
+vhdl work "split4cif.vhd"
+vhdl work "PosMeasurer.vhd"
+vhdl work "motor.vhd"
+vhdl work "DispController.vhd"
+verilog work "motor_control.vf"

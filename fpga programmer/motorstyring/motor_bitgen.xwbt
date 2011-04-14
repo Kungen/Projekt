@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\troels\Documents\xilinx\motorstyring\motor.ncd
+OUTFILE=C:\Users\troels\Documents\xilinx\motorstyring\motor.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4tq144
+WORKINGDIR=C:\Users\troels\Documents\xilinx\motorstyring
+LICENSE=WebPack
+USER_INFO=0_0_650

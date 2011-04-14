@@ -1,0 +1,12 @@
+[Inputs]
+Clk
+toggle1
+=pos_in[13:0]=
+[Outputs]
+motor1_power
+motor1_enable
+motor2_power
+motor2_enable
+[BiDir]
+motor1_direction
+motor2_direction

@@ -1,0 +1,27 @@
+NET "JB1" LOC = P87;
+NET "JB2" LOC = P93;
+
+NET "JC1" LOC = P77;
+NET "JC2" LOC = P86;
+NET "JC3" LOC = P76;
+
+NET "JD1" LOC = P75;
+NET "JD2" LOC = P59;
+NET "JD3" LOC = P74;
+
+NET "HClk" LOC = P54;
+NET "BTN3" LOC = P41;
+
+NET "A" LOC = P25;
+NET "B" LOC = P16;
+NET "C" LOC = P23;
+NET "D" LOC = P21;
+NET "E" LOC = P20;
+NET "F" LOC = P17;
+NET "G" LOC = P83;
+NET "H" LOC = P22;
+
+NET "chose<3>" LOC = P26;
+NET "chose<2>" LOC = P32;
+NET "chose<1>" LOC = P33;
+NET "chose<0>" LOC = P34;

@@ -1,0 +1,483 @@
+Release 12.4 - xst M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: motor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "motor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "motor"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-tq144
+
+---- Source Options
+Top Module Name                    : motor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/troels/Documents/xilinx/motorstyring/motor.vhd" in Library work.
+Entity <motor> compiled.
+Entity <motor> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <motor> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <motor> in library <work> (Architecture <behavioral>).
+Entity <motor> analyzed. Unit <motor> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <motor>.
+    Related source file is "C:/Users/troels/Documents/xilinx/motorstyring/motor.vhd".
+    Found finite state machine <FSM_0> for signal <display>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Clock enable       | display$cmp_eq0000        (positive)           |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <state>.
+    Found 1-bit register for signal <motor1_power>.
+    Found 1-bit register for signal <motor1_direction>.
+    Found 1-bit register for signal <motor1_enable>.
+    Found 4-bit register for signal <chose>.
+    Found 15-bit adder for signal <display$addsub0000> created at line 202.
+    Found 13-bit adder for signal <motor1_direction$add0000> created at line 126.
+    Found 14-bit comparator greatequal for signal <motor1_direction$cmp_ge0000> created at line 161.
+    Found 14-bit comparator greater for signal <motor1_direction$cmp_gt0000> created at line 165.
+    Found 14-bit comparator lessequal for signal <motor1_direction$cmp_le0000> created at line 165.
+    Found 14-bit comparator less for signal <motor1_enable$cmp_lt0000> created at line 161.
+    Found 16-bit comparator less for signal <motor1_power$cmp_lt0000> created at line 101.
+    Found 14-bit register for signal <pos>.
+    Found 14-bit addsub for signal <pos$mux0000>.
+    Found 16-bit register for signal <scale_count>.
+    Found 16-bit adder for signal <scale_count$addsub0000> created at line 97.
+    Found 15-bit up counter for signal <scale_count0>.
+    Found 13-bit up counter for signal <scale_count2>.
+    Found 4-bit register for signal <show>.
+    Found 4-bit register for signal <state>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <motor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 13-bit adder                                          : 1
+ 14-bit addsub                                         : 1
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 2
+ 13-bit up counter                                     : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 8
+ 1-bit register                                        : 3
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 4-bit register                                        : 3
+# Comparators                                          : 5
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator less                                : 1
+ 14-bit comparator lessequal                           : 1
+ 16-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <display/FSM> on signal <display[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 4
+ 13-bit adder                                          : 1
+ 14-bit addsub                                         : 1
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 2
+ 13-bit up counter                                     : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+# Comparators                                          : 5
+ 14-bit comparator greatequal                          : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator less                                : 1
+ 14-bit comparator lessequal                           : 1
+ 16-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <display_FSM_FFd3> in Unit <motor> is equivalent to the following FF/Latch, which will be removed : <chose_0> 
+INFO:Xst:2261 - The FF/Latch <display_FSM_FFd2> in Unit <motor> is equivalent to the following FF/Latch, which will be removed : <chose_1> 
+INFO:Xst:2261 - The FF/Latch <display_FSM_FFd1> in Unit <motor> is equivalent to the following FF/Latch, which will be removed : <chose_2> 
+INFO:Xst:2261 - The FF/Latch <display_FSM_FFd4> in Unit <motor> is equivalent to the following FF/Latch, which will be removed : <chose_3> 
+
+Optimizing unit <motor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block motor, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : motor.ngr
+Top Level Output File Name         : motor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 385
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 73
+#      LUT2                        : 32
+#      LUT2_L                      : 6
+#      LUT3                        : 13
+#      LUT3_D                      : 3
+#      LUT4                        : 32
+#      LUT4_L                      : 1
+#      MULT_AND                    : 8
+#      MUXCY                       : 114
+#      VCC                         : 1
+#      XORCY                       : 86
+# FlipFlops/Latches                : 73
+#      FD                          : 13
+#      FDE                         : 28
+#      FDR                         : 30
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 3
+#      OBUF                        : 18
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-4 
+
+ Number of Slices:                      110  out of    960    11%  
+ Number of Slice Flip Flops:             73  out of   1920     3%  
+ Number of 4 input LUTs:                175  out of   1920     9%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    108    20%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 73    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.819ns (Maximum Frequency: 84.610MHz)
+   Minimum input arrival time before clock: 6.889ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 11.819ns (frequency: 84.610MHz)
+  Total number of paths / destination ports: 10217 / 129
+-------------------------------------------------------------------------
+Delay:               11.819ns (Levels of Logic = 26)
+  Source:            scale_count_1 (FF)
+  Destination:       motor1_power (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: scale_count_1 to motor1_power
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.595  scale_count_1 (scale_count_1)
+     LUT1:I0->O            1   0.704   0.000  Madd_scale_count_addsub0000_cy<1>_rt (Madd_scale_count_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_scale_count_addsub0000_cy<1> (Madd_scale_count_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_scale_count_addsub0000_cy<2> (Madd_scale_count_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_scale_count_addsub0000_cy<3> (Madd_scale_count_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_scale_count_addsub0000_cy<4> (Madd_scale_count_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_scale_count_addsub0000_cy<5> (Madd_scale_count_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_scale_count_addsub0000_cy<6> (Madd_scale_count_addsub0000_cy<6>)
+     XORCY:CI->O           3   0.804   0.610  Madd_scale_count_addsub0000_xor<7> (scale_count_addsub0000<7>)
+     LUT2_L:I1->LO         1   0.704   0.104  scale_count_cmp_eq00002 (scale_count_cmp_eq00002)
+     LUT4:I3->O            3   0.704   0.535  scale_count_cmp_eq000012 (scale_count_cmp_eq000012)
+     LUT4:I3->O            8   0.704   0.757  scale_count_mux0000<12>11 (scale_count_mux0000<12>_mand)
+     MULT_AND:I1->LO       0   0.741   0.000  scale_count_mux0000<2>_mand (scale_count_mux0000<2>_mand1)
+     MUXCY:DI->O           1   0.888   0.000  Mcompar_motor1_power_cmp_lt0000_cy<2> (Mcompar_motor1_power_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<3> (Mcompar_motor1_power_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<4> (Mcompar_motor1_power_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<5> (Mcompar_motor1_power_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<6> (Mcompar_motor1_power_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<7> (Mcompar_motor1_power_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<8> (Mcompar_motor1_power_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<9> (Mcompar_motor1_power_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<10> (Mcompar_motor1_power_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<11> (Mcompar_motor1_power_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<12> (Mcompar_motor1_power_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_motor1_power_cmp_lt0000_cy<13> (Mcompar_motor1_power_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.459   0.499  Mcompar_motor1_power_cmp_lt0000_cy<14> (Mcompar_motor1_power_cmp_lt0000_cy<14>)
+     LUT2:I1->O            1   0.704   0.000  motor1_power_mux00031 (motor1_power_mux0003)
+     FD:D                      0.308          motor1_power
+    ----------------------------------------
+    Total                     11.819ns (8.719ns logic, 3.100ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 310 / 33
+-------------------------------------------------------------------------
+Offset:              6.889ns (Levels of Logic = 17)
+  Source:            Hall1 (PAD)
+  Destination:       pos_13 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Hall1 to pos_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.218   0.883  Hall1_IBUF (Hall1_IBUF)
+     LUT4:I0->O           15   0.704   1.096  pos_mux00012 (pos_mux0001)
+     LUT2:I1->O            1   0.704   0.000  Maddsub_pos_mux0000_lut<0> (Maddsub_pos_mux0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Maddsub_pos_mux0000_cy<0> (Maddsub_pos_mux0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<1> (Maddsub_pos_mux0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<2> (Maddsub_pos_mux0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<3> (Maddsub_pos_mux0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<4> (Maddsub_pos_mux0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<5> (Maddsub_pos_mux0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<6> (Maddsub_pos_mux0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<7> (Maddsub_pos_mux0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<8> (Maddsub_pos_mux0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<9> (Maddsub_pos_mux0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<10> (Maddsub_pos_mux0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_pos_mux0000_cy<11> (Maddsub_pos_mux0000_cy<11>)
+     MUXCY:CI->O           0   0.059   0.000  Maddsub_pos_mux0000_cy<12> (Maddsub_pos_mux0000_cy<12>)
+     XORCY:CI->O           1   0.804   0.000  Maddsub_pos_mux0000_xor<13> (pos_mux0000<13>)
+     FDE:D                     0.308          pos_13
+    ----------------------------------------
+    Total                      6.889ns (4.910ns logic, 1.979ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 35 / 14
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            show_2 (FF)
+  Destination:       A (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: show_2 to A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.591   0.883  show_2 (show_2)
+     LUT4:I0->O            1   0.704   0.420  B1 (B_OBUF)
+     OBUF:I->O                 3.272          B_OBUF (B)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.47 secs
+ 
+--> 
+
+Total memory usage is 246744 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
