@@ -1,0 +1,371 @@
+Archive member included because of file (symbol)
+
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup.o (__main)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_ctype_init)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_init_alloc)
+
+Allocating common symbols
+Common symbol       size              file
+
+__heaps             0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+__end_of_heap       0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup.o
+ .data          0x00000000        0x0 ./src/cr_startup.o
+ .bss           0x00000000        0x0 ./src/cr_startup.o
+ .text          0x00000000        0x0 ./src/emp_lcd.o
+ .data          0x00000000        0x0 ./src/emp_lcd.o
+ .bss           0x00000000        0x0 ./src/emp_lcd.o
+ .text.lcd_print_char
+                0x00000000        0x0 ./src/emp_lcd.o
+ .text.lcd_print_integer
+                0x00000000        0x0 ./src/emp_lcd.o
+ .text          0x00000000        0x0 ./src/emp_led.o
+ .data          0x00000000        0x0 ./src/emp_led.o
+ .bss           0x00000000        0x0 ./src/emp_led.o
+ .text.set_emp_leds
+                0x00000000        0x0 ./src/emp_led.o
+ .text          0x00000000        0x0 ./src/global_int.o
+ .data          0x00000000        0x0 ./src/global_int.o
+ .bss           0x00000000        0x0 ./src/global_int.o
+ .text          0x00000000        0x0 ./src/gpio.o
+ .data          0x00000000        0x0 ./src/gpio.o
+ .bss           0x00000000        0x0 ./src/gpio.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 ./src/systick_int.o
+ .data          0x00000000        0x0 ./src/systick_int.o
+ .bss           0x00000000        0x0 ./src/systick_int.o
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._start_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._end_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash_256       0x00000000         0x00040000         xr
+RAM_64           0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup.o
+LOAD ./src/emp_lcd.o
+LOAD ./src/emp_led.o
+LOAD ./src/global_int.o
+LOAD ./src/gpio.o
+LOAD ./src/main.o
+LOAD ./src/systick_int.o
+START GROUP
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libcr_eabihelpers.a
+END GROUP
+                0x00040000                __top_MFlash_256 = 0x40000
+                0x20010000                __top_RAM_64 = 0x20010000
+
+.text           0x00000000      0xd40
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xf0 ./src/cr_startup.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text.ResetISR
+                0x000000f0       0x64 ./src/cr_startup.o
+                0x000000f0                ResetISR
+ .text.NmiSR    0x00000154        0x8 ./src/cr_startup.o
+                0x00000154                NmiSR
+ .text.FaultISR
+                0x0000015c        0x8 ./src/cr_startup.o
+                0x0000015c                FaultISR
+ .text.IntDefaultHandler
+                0x00000164        0x8 ./src/cr_startup.o
+                0x00000164                IntDefaultHandler
+ .text.delay_ms
+                0x0000016c       0x34 ./src/emp_lcd.o
+                0x0000016c                delay_ms
+ .text.delay_us
+                0x000001a0       0x34 ./src/emp_lcd.o
+                0x000001a0                delay_us
+ .text.lcd_nibble
+                0x000001d4       0x7c ./src/emp_lcd.o
+                0x000001d4                lcd_nibble
+ .text.delay_nop
+                0x00000250       0x10 ./src/emp_lcd.o
+ .text.lcd_byte
+                0x00000260       0x4c ./src/emp_lcd.o
+                0x00000260                lcd_byte
+ .text.lcd_clear
+                0x000002ac       0x20 ./src/emp_lcd.o
+                0x000002ac                lcd_clear
+ .text.lcd_print_string
+                0x000002cc       0x8c ./src/emp_lcd.o
+                0x000002cc                lcd_print_string
+ .text.init_lcd
+                0x00000358       0xc8 ./src/emp_lcd.o
+                0x00000358                init_lcd
+ .text.enable_global_int
+                0x00000420        0xc ./src/global_int.o
+                0x00000420                enable_global_int
+ .text.disable_global_int
+                0x0000042c        0xc ./src/global_int.o
+                0x0000042c                disable_global_int
+ .text.init_gpio
+                0x00000438      0x19c ./src/gpio.o
+                0x00000438                init_gpio
+ .text.toggle_status_led
+                0x000005d4       0x24 ./src/gpio.o
+                0x000005d4                toggle_status_led
+ .text.main     0x000005f8      0x134 ./src/main.o
+                0x000005f8                main
+ .text.init_clk_system
+                0x0000072c      0x180 ./src/systick_int.o
+                0x0000072c                init_clk_system
+ .text.init_systick
+                0x000008ac       0xd8 ./src/systick_int.o
+                0x000008ac                init_systick
+ .text.systick_isr
+                0x00000984       0x24 ./src/systick_int.o
+                0x00000984                systick_isr
+ .text.__weak_main
+                0x000009a8       0x10 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                0x000009a8                __main
+                0x000009a8                __weak_main
+ .text          0x000009b8      0x36c c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x000009b8                _start_module_ctype
+                0x00000a8c                islower
+                0x00000b7c                tolower
+                0x00000adc                ispunct
+                0x00000b04                isspace
+                0x00000d18                _end_module_ctype
+                0x00000b54                isxdigit
+                0x00000c94                _ctype_init
+                0x00000b2c                isupper
+                0x000009ec                isalpha
+                0x00000a64                isgraph
+                0x000009c4                isalnum
+                0x00000ab4                isprint
+                0x00000bf4                _set_ctype_8859
+                0x00000a3c                isdigit
+                0x00000a14                iscntrl
+                0x00000bb8                toupper
+ .text._init_alloc
+                0x00000d24       0x18 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x00000d24                _init_alloc
+ *(.rodata*)
+ .rodata        0x00000d3c        0x4 ./src/main.o
+
+.glue_7         0x00000d40        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000d40        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000d40        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000d40        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000d40                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000d40                __exidx_end = .
+                0x00000d40                _etext = .
+
+.data           0x20000000      0x204 load address 0x00000d40
+                0x20000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data          0x20000000      0x204 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x20000000                __ctype
+                0x20000204                _edata = .
+
+.bss            0x20000204       0x10 load address 0x00000f44
+                0x20000204                _bss = .
+ *(.bss*)
+ .bss.ticks     0x20000204        0x4 ./src/main.o
+                0x20000204                ticks
+ .bss.testing   0x20000208        0x1 ./src/main.o
+                0x20000208                testing
+ *(COMMON)
+ *fill*         0x20000209        0x3 00
+ COMMON         0x2000020c        0x8 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x2000020c                __heaps
+                0x20000210                __end_of_heap
+                0x20000214                _ebss = .
+
+.cr_heap        0x20000214        0x0 load address 0x00000f44
+                0x20000214                end = .
+                0x20000214                _pvHeapStart = .
+                0x20010000                _vRamTop = __top_RAM_64
+                0x2000fff0                _vStackTop = (_vRamTop - 0x10)
+OUTPUT(LCD_driver.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0x392
+ .debug_abbrev  0x00000000       0xc7 ./src/cr_startup.o
+ .debug_abbrev  0x000000c7       0xb7 ./src/emp_lcd.o
+ .debug_abbrev  0x0000017e       0x5f ./src/emp_led.o
+ .debug_abbrev  0x000001dd       0x41 ./src/global_int.o
+ .debug_abbrev  0x0000021e       0x74 ./src/gpio.o
+ .debug_abbrev  0x00000292       0x7b ./src/main.o
+ .debug_abbrev  0x0000030d       0x85 ./src/systick_int.o
+
+.debug_info     0x00000000      0x6a9
+ .debug_info    0x00000000      0x10a ./src/cr_startup.o
+ .debug_info    0x0000010a      0x219 ./src/emp_lcd.o
+ .debug_info    0x00000323       0x95 ./src/emp_led.o
+ .debug_info    0x000003b8       0x8e ./src/global_int.o
+ .debug_info    0x00000446       0xad ./src/gpio.o
+ .debug_info    0x000004f3       0xdc ./src/main.o
+ .debug_info    0x000005cf       0xda ./src/systick_int.o
+
+.debug_line     0x00000000      0x502
+ .debug_line    0x00000000       0x7e ./src/cr_startup.o
+ .debug_line    0x0000007e      0x157 ./src/emp_lcd.o
+ .debug_line    0x000001d5       0x93 ./src/emp_led.o
+ .debug_line    0x00000268       0x87 ./src/global_int.o
+ .debug_line    0x000002ef       0x97 ./src/gpio.o
+ .debug_line    0x00000386       0xca ./src/main.o
+ .debug_line    0x00000450       0xb2 ./src/systick_int.o
+
+.debug_macinfo  0x00000000    0x99435
+ .debug_macinfo
+                0x00000000      0xc5b ./src/cr_startup.o
+ .debug_macinfo
+                0x00000c5b    0x196a0 ./src/emp_lcd.o
+ .debug_macinfo
+                0x0001a2fb    0x19738 ./src/emp_led.o
+ .debug_macinfo
+                0x00033a33    0x195a0 ./src/global_int.o
+ .debug_macinfo
+                0x0004cfd3    0x195a0 ./src/gpio.o
+ .debug_macinfo
+                0x00066573    0x19872 ./src/main.o
+ .debug_macinfo
+                0x0007fde5    0x19650 ./src/systick_int.o
+
+.debug_frame    0x00000000      0x2ec
+ .debug_frame   0x00000000       0x78 ./src/cr_startup.o
+ .debug_frame   0x00000078      0x138 ./src/emp_lcd.o
+ .debug_frame   0x000001b0       0x2c ./src/emp_led.o
+ .debug_frame   0x000001dc       0x40 ./src/global_int.o
+ .debug_frame   0x0000021c       0x44 ./src/gpio.o
+ .debug_frame   0x00000260       0x30 ./src/main.o
+ .debug_frame   0x00000290       0x5c ./src/systick_int.o
+
+.debug_loc      0x00000000      0x46d
+ .debug_loc     0x00000000       0xb8 ./src/cr_startup.o
+ .debug_loc     0x000000b8      0x202 ./src/emp_lcd.o
+ .debug_loc     0x000002ba       0x37 ./src/emp_led.o
+ .debug_loc     0x000002f1       0x56 ./src/global_int.o
+ .debug_loc     0x00000347       0x62 ./src/gpio.o
+ .debug_loc     0x000003a9       0x37 ./src/main.o
+ .debug_loc     0x000003e0       0x8d ./src/systick_int.o
+
+.debug_pubnames
+                0x00000000      0x20e
+ .debug_pubnames
+                0x00000000       0x5d ./src/cr_startup.o
+ .debug_pubnames
+                0x0000005d       0xa1 ./src/emp_lcd.o
+ .debug_pubnames
+                0x000000fe       0x23 ./src/emp_led.o
+ .debug_pubnames
+                0x00000121       0x3f ./src/global_int.o
+ .debug_pubnames
+                0x00000160       0x36 ./src/gpio.o
+ .debug_pubnames
+                0x00000196       0x31 ./src/main.o
+ .debug_pubnames
+                0x000001c7       0x47 ./src/systick_int.o
+
+.debug_aranges  0x00000000      0x160
+ .debug_aranges
+                0x00000000       0x38 ./src/cr_startup.o
+ .debug_aranges
+                0x00000038       0x68 ./src/emp_lcd.o
+ .debug_aranges
+                0x000000a0       0x20 ./src/emp_led.o
+ .debug_aranges
+                0x000000c0       0x28 ./src/global_int.o
+ .debug_aranges
+                0x000000e8       0x28 ./src/gpio.o
+ .debug_aranges
+                0x00000110       0x20 ./src/main.o
+ .debug_aranges
+                0x00000130       0x30 ./src/systick_int.o
+
+.debug_ranges   0x00000000      0x128
+ .debug_ranges  0x00000000       0x30 ./src/cr_startup.o
+ .debug_ranges  0x00000030       0x60 ./src/emp_lcd.o
+ .debug_ranges  0x00000090       0x18 ./src/emp_led.o
+ .debug_ranges  0x000000a8       0x20 ./src/global_int.o
+ .debug_ranges  0x000000c8       0x20 ./src/gpio.o
+ .debug_ranges  0x000000e8       0x18 ./src/main.o
+ .debug_ranges  0x00000100       0x28 ./src/systick_int.o
+
+.debug_str      0x00000000      0x2bc
+ .debug_str     0x00000000       0xf1 ./src/cr_startup.o
+ .debug_str     0x000000f1       0xc0 ./src/emp_lcd.o
+                                0x172 (size before relaxing)
+ .debug_str     0x000001b1       0x2a ./src/emp_led.o
+                                 0xea (size before relaxing)
+ .debug_str     0x000001db       0x39 ./src/global_int.o
+                                 0xf9 (size before relaxing)
+ .debug_str     0x00000214       0x36 ./src/gpio.o
+                                 0xf6 (size before relaxing)
+ .debug_str     0x0000024a       0x34 ./src/main.o
+                                0x100 (size before relaxing)
+ .debug_str     0x0000027e       0x3e ./src/systick_int.o
+                                0x118 (size before relaxing)
+
+.comment        0x00000000      0x1ae
+ .comment       0x00000000       0x2b ./src/cr_startup.o
+ .comment       0x0000002b       0x2b ./src/emp_lcd.o
+ .comment       0x00000056       0x2b ./src/emp_led.o
+ .comment       0x00000081       0x2b ./src/global_int.o
+ .comment       0x000000ac       0x2b ./src/gpio.o
+ .comment       0x000000d7       0x2b ./src/main.o
+ .comment       0x00000102       0x2b ./src/systick_int.o
+ .comment       0x0000012d       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .comment       0x00000158       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .comment       0x00000183       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 ./src/cr_startup.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/emp_lcd.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/emp_led.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/global_int.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/gpio.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/main.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/systick_int.o
+ .ARM.attributes
+                0x00000157       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x00000188       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .ARM.attributes
+                0x000001b9       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
