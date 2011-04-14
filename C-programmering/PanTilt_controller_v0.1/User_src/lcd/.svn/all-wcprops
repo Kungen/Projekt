@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/EMP/!svn/ver/139/2011-1/code/Ass6_solution/User_src/lcd
+END
+lcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/EMP/!svn/ver/139/2011-1/code/Ass6_solution/User_src/lcd/lcd.c
+END
+lcd_port.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/EMP/!svn/ver/139/2011-1/code/Ass6_solution/User_src/lcd/lcd_port.c
+END
+lcd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/EMP/!svn/ver/139/2011-1/code/Ass6_solution/User_src/lcd/lcd.h
+END
+lcd_port.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/EMP/!svn/ver/139/2011-1/code/Ass6_solution/User_src/lcd/lcd_port.h
+END
