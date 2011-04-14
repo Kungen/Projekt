@@ -1,0 +1,23 @@
+Sådan er BASYS kittet forbundet med DUAL-H-broen og Hall-sensorerne på motorerne:
+
+(NB! vores motor er forbundet som motor 1)
+
+JA1 = SPI CLK signal
+JA2 = SPI Master/slave select
+JA3 = Master in / slave out
+JA4 = Master out / slave in
+
+JB1 = Hall A motor 1
+JB2 = Hall B motor 1
+JB3 = Hall A motor 2
+JB4 = Hall B motor 2
+
+JC1 = IN1 motor 1
+JC2 = IN2 motor 1 
+JC3 = EN motor 1
+JC4 ikke i brug
+
+JD1 = IN1 motor 2
+JD2 = IN2 motor 2 
+JD3 = EN motor 2
+JD4 ikke i brug

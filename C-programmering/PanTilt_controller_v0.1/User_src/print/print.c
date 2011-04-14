@@ -1,0 +1,117 @@
+/*****************************************************************************
+* University of Southern Denmark
+* Embedded C Programming (ECP)
+*
+* MODULENAME.: scale.c
+*
+* PROJECT....: EMP
+*
+* DESCRIPTION: See module specification file (.h-file).
+*
+* Change Log:
+******************************************************************************
+* Date    Id    Change
+* YYMMDD
+* --------------------
+* 100405  KHA    Module created.
+*
+*****************************************************************************/
+
+/***************************** Include files *******************************/
+#include "inc\lm3s6965.h"
+#include "FreeRTOS.h"
+#include "Task.h"
+#include "queue.h"
+#include "semphr.h"
+#include "..\inc\emp_type.h"
+#include "..\inc\glob_def.h"
+#include "..\cpu\cpu.h"
+#include "..\inc\binary.h"
+#include "..\lcd\lcd.h"
+#include "..\adc\adc.h"
+#include "print.h"
+#include "stdio.h"
+ #include <string.h>
+
+
+
+/*****************************    Defines    *******************************/
+
+/*****************************   Constants   *******************************/
+
+/*****************************   Variables   *******************************/
+
+/*****************************   Functions   *******************************/
+
+ 
+ /* reverse:  reverse string s in place */
+ void reverse(INT8U s[])
+ {
+     INT16U i, j;
+     INT8U c;
+ 
+     for (i = 0, j = strlen((char*) s)-1; i<j; i++, j--) {
+         c = s[i];
+         s[i] = s[j];
+         s[j] = c;
+     }
+ }
+
+
+ /* itoa:  convert n to characters in s */
+ void itoa(INT16S n, INT8U s[])
+ {
+     INT16U i, sign;
+ 
+     if ((sign = n) < 0)  /* record sign */
+         n = -n;          /* make n positive */
+     i = 0;
+     
+     do {       /* generate digits in reverse order */
+         s[i++] = n % 10 + '0';   /* get next digit */
+     } while ((n /= 10) > 0);     /* delete it */
+ 
+     if (sign < 0)
+         s[i++] = '-';
+     s[i] = '\0';
+     reverse(s);
+ }
+
+
+
+void print_task(void *pvParameters)
+/*****************************************************************************
+*   Input    :
+*   Output   :
+*   Function :
+******************************************************************************/
+{
+	INT16S value = 0;
+	INT8U ch0, ch1, ch2, ch3, ch4; 
+
+	while(1)
+	{
+		value = get_analog_input_value();
+		
+		ch0 = ( value / 10000       )+'0';
+		ch1 = ((value % 10000) /1000)+'0';
+		ch2 = ((value % 1000) / 100 )+'0';
+		ch3 = ((value % 100 ) / 10  )+'0';
+		ch4 = ( value % 10          )+'0';
+	
+		display_buffer_write_string(0,0,(INT8U*) "Value:");
+		display_buffer_write_char(6,0,ch0);
+		display_buffer_write_char(7,0,ch1);
+		display_buffer_write_char(8,0,ch2);
+		display_buffer_write_char(9,0,ch3);
+		display_buffer_write_char(10,0,ch4);
+		
+		vTaskDelay(100 / portTICK_RATE_MS); // Wait 100 milli sec.
+	}
+}
+
+/****************************** End Of Module *******************************/
+
+
+
+

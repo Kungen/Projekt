@@ -1,0 +1,214 @@
+/*****************************************************************************
+* Odense University College of Enginerring
+* Embedded C Programming (ECP)
+*
+* MODULENAME.: button.c
+*
+* PROJECT....: ECP
+*
+* DESCRIPTION:
+*
+* Change Log:
+******************************************************************************
+* Date    Id    Change
+* YYMMDD
+* --------------------
+* 050128  KA    Module created.
+*
+*****************************************************************************/
+
+/***************************** Include files *******************************/
+#include "inc\lm3s6965.h"
+#include "..\inc\emp_type.h"
+#include "..\inc\glob_def.h"
+#include "..\inc\binary.h"
+#include "..\rtcs\rtcs.h"
+#include "..\event\event.h"
+#include "..\queue\queue.h"
+#include "..\sw_timer\sw_timer.h"
+//#include "..\systick\systick.h"
+#include "button.h"
+
+/*****************************    Defines    *******************************/
+
+// Button State machine states.
+// ----------------------------
+enum button_states
+{
+  IDLE, FIRST_PUSH, FIRST_RELEASE, SECOND_PUSH, LONG_PUSH
+};
+
+#define PF1		1		// Bit 1
+#define PC5		5
+/*****************************   Constants   *******************************/
+
+/*****************************   Variables   *******************************/
+
+enum button_states button_state = IDLE;
+
+/*****************************   Functions   *******************************/
+
+
+void button_gpio_init(void)
+/*****************************************************************************
+*   Input    : 	-
+*   Output   : 	-
+*   Function : 	Push button setup
+******************************************************************************/
+{
+  	INT8U	dummy;
+	
+		// Enable the GPIO port that is used for the Select button.
+	  SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOC;
+
+	  // Do a dummy read to insert a few cycles after enabling the peripheral.
+	  dummy = SYSCTL_RCGC2_R;
+
+	  // Set the direction as input (PC5).  
+	  SET_BIT_LOW(GPIO_PORTC_DIR_R, PC5);
+	  
+	  // Enable the GPIO pins for digital function (PF0 and PF1).
+	  SET_BIT_HIGH(GPIO_PORTC_DEN_R, PC5);
+
+	  // disbale internal pull-up (PC5.  
+	  SET_BIT_HIGH(GPIO_PORTC_PUR_R, PC5);
+}
+
+
+INT8U button_pushed(void)
+/*****************************************************************************
+*   Input    : -
+*   Output   : Returns TRUE if button is pushed.
+*   Function : Check the state of the button.
+******************************************************************************/
+{
+  // Active low !
+	return( !TEST_BIT_HIGH(GPIO_PORTC_DATA_R,PC5));
+}
+
+
+enum EVENTS button_state_machine(void)
+/*****************************************************************************
+*   Input    : -
+*   Output   : -
+*   Function : The button state machine.
+******************************************************************************/
+{
+  enum EVENTS event = NO_EVENT;
+
+  switch( button_state )
+  {
+    case IDLE:
+	  	if( button_pushed())									// if button pushed
+			{
+        button_state = FIRST_PUSH;
+				sw_timer_set(LONG_PRESS_TIMER, LONG_PRESS_TIMEOUT);	// start timer long press timer
+      }		  
+		  break;
+    
+		case FIRST_PUSH:
+			if(!sw_timer_get(LONG_PRESS_TIMER)) 	// if timeout
+		  {
+		    button_state = LONG_PUSH;
+				event = LONG_PRESS;
+		  }
+		  else
+		  {
+	    	if(  !button_pushed() )							// if button released
+   		  {
+    	  	button_state = FIRST_RELEASE;
+			  	sw_timer_set(DOUBBLE_PRESS_TIMER, DOUBBLE_PRESS_TIMEOUT); 	// start timer long press timer
+        }
+		  }
+		  break;
+        
+		case FIRST_RELEASE:
+		  if(!sw_timer_get(DOUBBLE_PRESS_TIMER) )									// if timeout
+		  {
+		    button_state = IDLE;
+				event = SINGLE_PRESS;
+		  }
+		  else
+		  {
+	    	if(button_pushed())								// if button pressed
+   		  {
+    	  	button_state = SECOND_PUSH;
+    	  	sw_timer_set(LONG_PRESS_TIMER, LONG_PRESS_TIMEOUT);	// start timer long press timer
+        }
+		  }
+		  break;
+       
+		case SECOND_PUSH:
+		  if( !sw_timer_get(LONG_PRESS_TIMER))										// if timeout
+		  {
+		    button_state = LONG_PUSH;
+				event = LONG_PRESS;
+		  }
+		  else
+		  {
+	    	if(!button_pushed() )							// if button released
+   		  {
+    	  	button_state = IDLE;
+			  	event = DOUBBLE_PRESS;
+        }
+		  }
+		  break;
+       
+		case LONG_PUSH:
+    	if( ! button_pushed() )								// if button released
+    	{	
+				button_state = IDLE;
+		  }
+			break;
+  }
+  return event;
+}
+
+
+void init_button_task(void)
+/*****************************************************************************
+*   Input    : -
+*   Output   : -
+*   Function : The function initialise the button task.
+******************************************************************************/
+{
+	button_gpio_init();
+	
+	_start(BUTTON_TASK,MILLI_SEC(10));
+}
+
+
+void button_task(void)
+/*****************************************************************************
+*   Input    : -
+*   Output   : -
+*   Function : The button task.
+******************************************************************************/
+{
+	enum EVENTS event = NO_EVENT;
+	QUEUE	*button_queue;
+	
+	event = button_state_machine();
+	if (event != NO_EVENT)
+	{
+		// get queue handler for button queue.
+		button_queue = queue_handle_get(BUTTON_QUEUE);
+		queue_put(button_queue, event);
+		//_signal_sem(BUTTON_EVENTS_SEM);
+	}
+	_wait(MILLI_SEC(10));
+}
+
+/****************************** End Of Module *******************************/
+
+
+
+
+
+
+
+
+
+
+
+
