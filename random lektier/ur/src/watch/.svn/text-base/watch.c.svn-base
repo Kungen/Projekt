@@ -1,0 +1,461 @@
+/*****************************************************************************
+* Odense University College of Enginerring
+* Embedded C Programming (ECP)
+*
+* MODULENAME.: watch.c
+*
+* PROJECT....: ECP
+*
+* DESCRIPTION:
+*
+* Change Log:
+******************************************************************************
+* Date    Id    Change
+* YYMMDD
+* --------------------
+* 050128  KA    Module created.
+*
+*****************************************************************************/
+
+/***************************** Include files *******************************/
+#include "inc\lm3s6965.h"
+#include "..\inc\ecp_type.h"
+#include "..\inc\binary.h"
+#include "..\inc\glob_def.h"
+#include "..\lcd\lcd.h"
+#include "..\sw_timer\sw_timer.h"
+#include "..\event\event.h"
+#include "..\systick\systick.h"
+#include "watch.h"
+/*****************************    Defines    *******************************/
+
+enum WATCH_STATES 					{ STOPPED, RUN, SET_TIME };
+enum WATCH_SET_STATES 			{ HOUR, MIN, SEC };
+enum WATCH_DIRECTION_STATES { UP, DOWN };
+enum WATCH_DISPLAY_STATES		{ DISPLAY_VALUES, DISPLAY_BLANK};
+
+/*****************************   Constants   *******************************/
+
+/*****************************   Varables   *******************************/
+
+INT8S	sec = 0;
+INT8S min = 0;
+INT8S hour = 0;
+enum WATCH_STATES watch_state = STOPPED;
+enum WATCH_SET_STATES watch_set_state = SEC;
+enum WATCH_DIRECTION_STATES watch_direction_state = UP;
+enum WATCH_DISPLAY_STATES watch_display_state = DISPLAY_VALUES;
+/*****************************   Functions   *******************************/
+
+
+void watch_update_display(enum WATCH_SET_STATES state)
+/*****************************************************************************
+*   Input    : 	Current state (see SET_STATE enum)
+*   Output   : 	-
+*   Function : 	This function updates the lcd display accroding to the 
+*								actual time and state variable. 
+******************************************************************************/
+{
+	
+	switch (state)
+	{
+		case SEC:
+			display_buffer_write_char(10,0, sec / 10 + '0');
+			display_buffer_write_char(11,0, sec % 10 + '0');
+			break;
+
+		case MIN:
+			display_buffer_write_char(7,0, min / 10 + '0');
+			display_buffer_write_char(8,0, min % 10 + '0');
+			break;
+
+		case HOUR:
+			display_buffer_write_char(4,0, hour/ 10 + '0');
+			display_buffer_write_char(5,0, hour % 10 + '0');
+			break;
+	}
+}
+
+
+
+BOOLEAN watch_set_time(INT8U value, enum WATCH_SET_STATES state)
+/*****************************************************************************
+*   Input    :	-
+*   Output   :	-
+*   Function :	-  
+******************************************************************************/
+{
+	BOOLEAN return_value = FALSE;
+	
+	switch (state)
+	{
+		case SEC:
+  		if (value <= 59)
+			{
+				sec = value;
+				return_value = TRUE;
+			}
+			break;
+
+		case MIN:
+  		if (value <= 59)
+			{
+				min = value;
+				return_value = TRUE;
+			}
+			break;
+
+		case HOUR:
+  		if (value <= 23)
+			{
+				hour = value;
+				return_value = TRUE;
+			}
+			break;
+	}
+	return return_value;
+}
+
+
+
+void watch_add_to_time(INT8S counter, enum WATCH_SET_STATES state)
+/*****************************************************************************
+*   Input    :	counter	:	Value to add
+								state		:	state to update (see SET_STATE enum) 
+*   Output   :	-
+*   Function :	This function updates the time by adding the counter value
+								to the current time variable accordig to the state variable. 
+******************************************************************************/
+{
+	switch (state)
+	{
+		case SEC:
+			sec += counter;
+  		if (sec > 59)
+			{
+				sec = 0;
+			}
+			if (sec < 0)
+			{
+				sec = 59;
+			}
+			break;
+
+		case MIN:	
+			min += counter;
+  		if (min > 59)
+			{
+				min = 0;
+			}
+			if (min < 0)
+			{
+				min = 59;
+			}
+			break;
+
+		case HOUR:
+			hour += counter;
+  		if (hour > 23)
+			{
+				hour = 0;
+			}
+			if (hour < 0)
+			{
+				hour = 23;
+			}
+			break;
+	}
+}
+
+
+void watch_run(void)
+/*****************************************************************************
+*   Input    :	-
+*   Output   :	-
+*   Function :	This is the clock function. Must be called every second
+******************************************************************************/
+{
+  sec++;
+  if( sec >= 60 )
+  {
+  	sec = 0;
+    min++;
+    if( min >= 60 )
+    {
+    	min = 0;
+    	hour++;
+	   	if( hour >= 24 )
+		 	{
+     		hour = 0;
+			}
+		}
+	}
+}
+
+
+void watch_blank_numbers(enum WATCH_SET_STATES watch_set_state)
+/*****************************************************************************
+*   Input    :	state: state to update (see SET_STATE enum)
+*   Output   :	-
+*   Function :	This function write blanks to the lcd display according to 
+								the state variable.
+******************************************************************************/
+{
+	
+	switch (watch_set_state)
+	{
+		case 	SEC:
+			display_buffer_write_char(10,0,' ');
+			display_buffer_write_char(11,0,' ');
+			break;
+
+		case	MIN:
+			display_buffer_write_char(7,0,' ');
+			display_buffer_write_char(8,0,' ');
+			break;
+
+		case	HOUR:
+			display_buffer_write_char(4,0,' ');
+			display_buffer_write_char(5,0,' ');
+			break;
+	}
+}
+
+
+void watch_set_time_display(INT8S value_to_add, enum WATCH_SET_STATES watch_set_state)
+/*****************************************************************************
+*   Input    :	-
+*   Output   :	-
+*   Function :	-
+******************************************************************************/
+{
+	switch (watch_display_state)
+	{
+	case 	DISPLAY_VALUES:
+				if (!sw_timer_get(WATCH_SET_TIME_TIMER))
+				{
+					watch_update_display(watch_set_state);
+					watch_display_state = DISPLAY_BLANK;
+					sw_timer_set(WATCH_SET_TIME_TIMER, MILLI_SEC(500));
+				}
+				if (value_to_add)
+				{
+					watch_add_to_time(value_to_add, watch_set_state);
+					watch_update_display(watch_set_state);
+					sw_timer_set(WATCH_SET_TIME_TIMER, MILLI_SEC(500));
+				}
+		break;
+		
+	case 	DISPLAY_BLANK:
+				if (!sw_timer_get(WATCH_SET_TIME_TIMER))
+				{
+					watch_blank_numbers(watch_set_state);
+					watch_display_state = DISPLAY_VALUES;
+					sw_timer_set(WATCH_SET_TIME_TIMER, MILLI_SEC(500));
+				}
+				if (value_to_add)
+				{
+					watch_add_to_time(value_to_add, watch_set_state);
+					watch_update_display(watch_set_state);
+					sw_timer_set(WATCH_SET_TIME_TIMER, MILLI_SEC(500));
+					watch_display_state = DISPLAY_VALUES;
+				}
+		break;
+	}
+}	
+	
+
+void watch_adjust_time(enum EVENTS event)
+/*****************************************************************************
+*   Input    :	-
+*   Output   :	-
+*   Function :	-  
+******************************************************************************/
+{
+	INT8S	value_to_add = 0;
+	
+	switch(watch_set_state)
+	{
+		case SEC:
+			switch(watch_direction_state)
+			{
+				case UP:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = 1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = DOWN;
+					}
+					break;
+					
+				case DOWN:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = -1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = UP;
+					}
+					break;
+			}	
+			
+			if (event == LONG_PRESS)
+			{
+				watch_update_display(SEC);
+				watch_set_state = MIN;
+			}
+			break;
+			
+		case MIN:
+			switch(watch_direction_state)
+			{
+				case UP:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = 1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = DOWN;
+					}
+					break;
+						
+				case DOWN:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = -1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = UP;
+					}
+					break;
+			}	
+				
+			if (event == LONG_PRESS)
+			{
+				watch_update_display(MIN);
+				watch_set_state = HOUR;
+			}
+			break;
+	 	
+		case HOUR:
+			switch(watch_direction_state)
+			{
+				case UP:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = 1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = DOWN;
+					}
+					break;
+						
+				case DOWN:	
+					if (event == SINGLE_PRESS)
+					{
+						value_to_add = -1;
+					}
+					if (event == DOUBBLE_PRESS)
+					{
+						watch_direction_state = UP;
+					}
+					break;
+				
+					if (event == LONG_PRESS)
+				{
+					watch_update_display(HOUR);
+				}
+			}	
+	}			
+	watch_set_time_display(value_to_add, watch_set_state);
+}
+
+
+void watch_init(void)
+/*****************************************************************************
+*   Function : See module specification (.h-file).
+*****************************************************************************/{
+	
+	display_buffer_write_char(6,0,':');
+	display_buffer_write_char(9,0,':');
+	watch_set_time(23,HOUR);
+	watch_set_time(59,MIN);
+	watch_set_time(40,SEC);
+  watch_state = RUN;
+}
+
+
+void watch_task(void)
+/*****************************************************************************
+*   Function : See module specification (.h-file).
+*****************************************************************************/
+{
+	enum EVENTS event = NO_EVENT;
+	
+	if (!sw_timer_get(WATCH_TIMER))
+	{
+		event = event_get(BUTTON_EVENTS);
+			
+		switch (watch_state)
+		{
+			case RUN: 
+				if (event == LONG_PRESS)
+				{
+					watch_state = SET_TIME;
+					watch_set_state = SEC;
+					watch_direction_state = UP;
+					watch_display_state = DISPLAY_BLANK;
+					sw_timer_set(WATCH_TIMER, MILLI_SEC(50));
+				}
+				else
+				{
+					watch_run();
+					watch_update_display(HOUR);
+					watch_update_display(MIN);
+					watch_update_display(SEC);
+					sw_timer_set(WATCH_TIMER, MILLI_SEC(1000));
+				}
+				break;
+
+			case SET_TIME:
+				if ((event == LONG_PRESS) && (watch_set_state == HOUR))
+				{
+					watch_state = RUN;
+					sw_timer_set(WATCH_TIMER, MILLI_SEC(1000));
+				}
+				else
+				{
+					watch_adjust_time(event);
+					sw_timer_set(WATCH_TIMER, MILLI_SEC(50));
+				}
+				break;
+
+			case STOPPED:
+				break;
+				
+			default:
+				break;
+		}
+	}
+}
+
+
+/****************************** End Of Module *******************************/
+
+
+
+
+
+
+
+
+
+
+
+
