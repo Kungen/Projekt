@@ -1,0 +1,7 @@
+Mht. støj - kig på opgave 5.24
+
+Hastigheden i transformatoren - u = sqrt(dX^2+dy^2) (evt) * k
+
+til portefølje:
+
+tau = M(tæta)a +C(a,tæta) + F(a) + g(alpha) //C kan neglisieres, da uliniær, det samme kan 2/3 af friktionskrafterne. Tæta i M skal gerne fjernes.

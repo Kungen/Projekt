@@ -1,0 +1,8 @@
+vhdtdtfi -lib work PosMeasurer.vhd -prj motorstyring -o PosMeasurer.spl -module PosMeasurer -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PosMeasurer.spl C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.sym 
+vhdtdtfi -lib work PosMeasurer.vhd -prj motorstyring -o PosMeasurer.spl -module PosMeasurer -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PosMeasurer.spl C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.sym 
+vhdtdtfi -lib work PosMeasurer.vhd -prj motorstyring -o PosMeasurer.spl -module PosMeasurer -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PosMeasurer.spl C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.sym 
+vhdtdtfi -lib work PosMeasurer.vhd -prj motorstyring -o PosMeasurer.spl -module PosMeasurer -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PosMeasurer.spl C:/Users/troels/Documents/xilinx/motorstyring/PosMeasurer.sym 

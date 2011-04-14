@@ -1,0 +1,3 @@
+Symmetri på L og K matricer
+er det ok at bruge  L = 4:10*K ?
+Hvad menes der med åbensløjfe karakterestik ?

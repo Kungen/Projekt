@@ -1,0 +1,31 @@
+\documentclass[a4paper,11pt]{report}
+\input{style.tex}
+\begin{document}
+\include{forside}
+\include{afsnit/intro/resume}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+%\setcounter{page}{1}
+\pagebreak
+%\listoffixmes
+%\listoffigures
+%\listoftables
+% ============== Indsætter todoliste ===============================
+\listoftodos
+\newpage
+% ============== Todoliste slutter =================================
+
+\input{afsnit/intro/forord}
+\input{afsnit/intro/indledning}
+\pagebreak
+\input{afsnit/rapport/rapport}
+\pagebreak
+\input{afsnit/afslutning/perspektivering}
+\input{afsnit/afslutning/konklusion}
+
+\appendix
+\include{afsnit/appendiks/appendiks}
+
+
+\end{document}

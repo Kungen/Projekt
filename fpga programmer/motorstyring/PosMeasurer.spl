@@ -1,0 +1,7 @@
+[Inputs]
+Hall1
+Hall2
+Clk
+[Outputs]
+=pos_out[13:0]=
+[BiDir]

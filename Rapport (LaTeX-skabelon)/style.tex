@@ -1,0 +1,88 @@
+\usepackage[latin1]{inputenc} % Skal passe til editorens indstillinger
+\usepackage[danish]{babel} % danske overskrifter
+\usepackage[T1]{fontenc} % fonte (output)
+\usepackage{lmodern} % vektor fonte
+\usepackage{graphicx} % indsættelse af billeder
+\graphicspath{{./billeder/}} % stivej til bibliotek med figurer
+\usepackage{mathtools} % matematik - understøtter muligheden for at bruge \eqref{}
+\usepackage[draft,danish]{fixme}
+\usepackage{sistyle}
+\usepackage{listings}
+	\renewcommand\lstlistingname{Kodeeksempel}
+	\renewcommand\lstlistlistingname{Kodeeksempel}
+% Indsæt todonotes i margin
+\usepackage{todonotes}
+\SIdecimalsign{,}
+\usepackage{cite}
+\usepackage{textcomp}
+%\usepackage{geometry}
+%\geometry{left=3.3cm,top=3cm,right=2.8cm,bottom=3.5cm}
+\usepackage{booktabs,dcolumn,array}
+\usepackage{multirow}
+\renewcommand\multirowsetup{\centering}
+\usepackage{cellspace}
+	\addtolength\cellspacetoplimit{4pt}
+	\addtolength\cellspacebottomlimit{4pt}
+%\renewcommand\baselinestretch{1.6}
+
+%\settocdepth{subsection}
+%\setsecnumdepth{subsection}
+
+\addto\captionsdanish{
+\renewcommand\contentsname{Indholdsfortegnelse}
+\renewcommand\chaptername{Afsnit}
+\renewcommand\bibname{Litteraturliste}
+\renewcommand\appendixname{Appendiks}
+}
+
+\usepackage[plainpages=false,pdfpagelabels,pageanchor=false]{hyperref} % aktive links
+\hypersetup{%
+  pdfauthor={Gruppe 2},
+  pdftitle={Modellering, simulering, analogier og eksperimenter},
+  pdfsubject={DDF1}}
+\usepackage{memhfixc}% rettelser til hyperref
+
+% -- Vis equations og figurere med chapter nummer først for bedre overskuelighed.
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\usepackage[hang,small,bf]{caption}
+
+\usepackage{fancyhdr}
+
+
+%Opsætning af marginer
+\addtolength{\hoffset}{-1.6cm}
+\addtolength{\textwidth}{3.8cm}
+\addtolength{\voffset}{-1.8cm}
+\addtolength{\textheight}{4.8cm}
+\topmargin = 0cm
+
+\pagestyle{fancyplain}
+
+%Opsætninger af Header og Footer
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\fancyhf{}
+\lhead{\bfseries \leftmark}
+\rhead{\bfseries \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headwidth}{15.9cm}
+\addtolength{\headheight}{0.5pt}
+
+\fancypagestyle{plain}{\renewcommand{\headrulewidth}{0.5pt}}
+% Alle forsider er plain, og kan sættes op her.
+\fancypagestyle{empty}{\renewcommand{\headrulewidth}{0pt} \renewcommand{\footrulewidth}{0pt} \lhead{} \rhead{}}
+
+\fancypagestyle{lines}{\renewcommand{\headrulewidth}{0.5pt} \lhead{} \rhead{}}
+% Siderne med Forord og Indholdsfortegnelse skal ikke have titel og nummerering, dette er opsat her.
+
+
+%Opsætning af Chapters
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{\vspace*{-10\p@}{\parindent \z@ {\raggedright \LARGE \bfseries \thechapter \;} \LARGE \bfseries #1}\vskip 10 \p@}
+\def\@makeschapterhead#1{\vspace*{-10\p@}{\parindent \z@ {\raggedright \Huge \bfseries #1}\vskip 10 \p@}}
+
+\setlength{\headheight}{14pt}
+
+\usepackage[numbib,nottoc]{tocbibind}
