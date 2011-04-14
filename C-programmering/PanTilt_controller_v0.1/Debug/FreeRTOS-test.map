@@ -1,0 +1,997 @@
+Archive member included because of file (symbol)
+
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                              ./User_src/cr_startup_c.o (__main)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_ctype_init)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+                              ./FreeRTOS_src/queue.o (memcpy)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+                              ./FreeRTOS_src/tasks.o (memset)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+                              ./User_src/print/print.o (strlen)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+                              ./FreeRTOS_src/tasks.o (strncpy)
+c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                              c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o) (_init_alloc)
+
+Allocating common symbols
+Common symbol       size              file
+
+analog_input_value_mutex
+                    0x4               ./User_src/main.o
+display_buffer      0x40              ./User_src/lcd/lcd.o
+lcd_buffer_mutex    0x4               ./User_src/main.o
+common_pins_mutex   0x4               ./User_src/main.o
+__heaps             0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+__end_of_heap       0x4               c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+keyboard_input_queue
+                    0x4               ./User_src/main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./User_src/spi/spi.o
+ .data          0x00000000        0x0 ./User_src/spi/spi.o
+ .bss           0x00000000        0x0 ./User_src/spi/spi.o
+ .bss.test      0x00000000        0x0 ./User_src/spi/spi.o
+ .text          0x00000000        0x0 ./User_src/print/print.o
+ .data          0x00000000        0x0 ./User_src/print/print.o
+ .bss           0x00000000        0x0 ./User_src/print/print.o
+ .text.reverse  0x00000000        0x0 ./User_src/print/print.o
+ .text.itoa     0x00000000        0x0 ./User_src/print/print.o
+ .text          0x00000000        0x0 ./User_src/cr_startup_c.o
+ .data          0x00000000        0x0 ./User_src/cr_startup_c.o
+ .bss           0x00000000        0x0 ./User_src/cr_startup_c.o
+ .text          0x00000000        0x0 ./User_src/main.o
+ .data          0x00000000        0x0 ./User_src/main.o
+ .bss           0x00000000        0x0 ./User_src/main.o
+ .text.__error__
+                0x00000000        0x0 ./User_src/main.o
+ .text          0x00000000        0x0 ./User_src/lcd/lcd.o
+ .data          0x00000000        0x0 ./User_src/lcd/lcd.o
+ .bss           0x00000000        0x0 ./User_src/lcd/lcd.o
+ .text          0x00000000        0x0 ./User_src/lcd/lcd_port.o
+ .data          0x00000000        0x0 ./User_src/lcd/lcd_port.o
+ .bss           0x00000000        0x0 ./User_src/lcd/lcd_port.o
+ .text          0x00000000        0x0 ./User_src/keyboard/keyboard.o
+ .data          0x00000000        0x0 ./User_src/keyboard/keyboard.o
+ .bss           0x00000000        0x0 ./User_src/keyboard/keyboard.o
+ .text          0x00000000        0x0 ./User_src/emp_led/emp_led.o
+ .data          0x00000000        0x0 ./User_src/emp_led/emp_led.o
+ .bss           0x00000000        0x0 ./User_src/emp_led/emp_led.o
+ .text.set_emp_leds
+                0x00000000        0x0 ./User_src/emp_led/emp_led.o
+ .text          0x00000000        0x0 ./User_src/cpu/cpu.o
+ .data          0x00000000        0x0 ./User_src/cpu/cpu.o
+ .bss           0x00000000        0x0 ./User_src/cpu/cpu.o
+ .text          0x00000000        0x0 ./User_src/alive_task/alive_task.o
+ .data          0x00000000        0x0 ./User_src/alive_task/alive_task.o
+ .bss           0x00000000        0x0 ./User_src/alive_task/alive_task.o
+ .text          0x00000000        0x0 ./User_src/adc/adc.o
+ .data          0x00000000        0x0 ./User_src/adc/adc.o
+ .bss           0x00000000        0x0 ./User_src/adc/adc.o
+ .text          0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .data          0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss           0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.pxCurrentCoRoutine
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.uxTopCoRoutineReadyPriority
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xCoRoutineTickCount
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xLastTickCount
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xPassedTicks
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.xCoRoutineCreate
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.vCoRoutineAddToDelayedList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.prvCheckPendingReadyList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.prvCheckDelayedList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.vCoRoutineSchedule
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.prvInitialiseCoRoutineLists
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text.xCoRoutineRemoveFromEventList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.pxReadyCoRoutineLists
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xDelayedCoRoutineList1
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xDelayedCoRoutineList2
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.pxDelayedCoRoutineList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.pxOverflowDelayedCoRoutineList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .bss.xPendingReadyCoRoutineList
+                0x00000000        0x0 ./FreeRTOS_src/croutine.o
+ .text          0x00000000        0x0 ./FreeRTOS_src/list.o
+ .data          0x00000000        0x0 ./FreeRTOS_src/list.o
+ .bss           0x00000000        0x0 ./FreeRTOS_src/list.o
+ .text          0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .data          0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .bss           0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .bss.xQueueRegistry
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.vQueueDelete
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.vQueueAddToRegistry
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text.vQueueUnregisterQueue
+                0x00000000        0x0 ./FreeRTOS_src/queue.o
+ .text          0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .data          0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .bss           0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskDelete
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskPrioritySet
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskSuspend
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.xTaskIsTaskSuspended
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskResume
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.xTaskGetTickCount
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.usTaskCheckFreeStackSpace
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text.uxTaskGetStackHighWaterMark
+                0x00000000        0x0 ./FreeRTOS_src/tasks.o
+ .text          0x00000000        0x0 ./FreeRTOS_portable/port.o
+ .data          0x00000000        0x0 ./FreeRTOS_portable/port.o
+ .bss           0x00000000        0x0 ./FreeRTOS_portable/port.o
+ .rodata.ulKernelPriority
+                0x00000000        0x0 ./FreeRTOS_portable/port.o
+ .text.vPortEndScheduler
+                0x00000000        0x0 ./FreeRTOS_portable/port.o
+ .text          0x00000000        0x0 ./FreeRTOS_MemMang/heap_2.o
+ .data          0x00000000        0x0 ./FreeRTOS_MemMang/heap_2.o
+ .bss           0x00000000        0x0 ./FreeRTOS_MemMang/heap_2.o
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .text._start_module_memcpy
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .text._end_module_memcpy
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .text._start_module_memset
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .text._end_module_memset
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .text._start_module_strlen
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .text.strlen   0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .text._end_module_strlen
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .text._start_module_strncpy
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .text._end_module_strncpy
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .text          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._start_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+ .text._end_module__init_alloc
+                0x00000000        0x0 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash_256       0x00000000         0x00040000         xr
+RAM_64           0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./User_src/spi/spi.o
+LOAD ./User_src/print/print.o
+LOAD ./User_src/cr_startup_c.o
+LOAD ./User_src/main.o
+LOAD ./User_src/lcd/lcd.o
+LOAD ./User_src/lcd/lcd_port.o
+LOAD ./User_src/keyboard/keyboard.o
+LOAD ./User_src/emp_led/emp_led.o
+LOAD ./User_src/cpu/cpu.o
+LOAD ./User_src/alive_task/alive_task.o
+LOAD ./User_src/adc/adc.o
+LOAD ./FreeRTOS_src/croutine.o
+LOAD ./FreeRTOS_src/list.o
+LOAD ./FreeRTOS_src/queue.o
+LOAD ./FreeRTOS_src/tasks.o
+LOAD ./FreeRTOS_portable/port.o
+LOAD ./FreeRTOS_MemMang/heap_2.o
+START GROUP
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a
+LOAD c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/thumb2\libcr_eabihelpers.a
+END GROUP
+                0x00040000                __top_MFlash_256 = 0x40000
+                0x20010000                __top_RAM_64 = 0x20010000
+
+.text           0x00000000     0x37fe
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xf0 ./User_src/cr_startup_c.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text.init_spi_pin
+                0x000000f0       0x94 ./User_src/spi/spi.o
+                0x000000f0                init_spi_pin
+ .text.init_spi
+                0x00000184       0xe4 ./User_src/spi/spi.o
+                0x00000184                init_spi
+ .text.spi_task
+                0x00000268       0x60 ./User_src/spi/spi.o
+                0x00000268                spi_task
+ .text.print_task
+                0x000002c8      0x1cc ./User_src/print/print.o
+                0x000002c8                print_task
+ .text.ResetISR
+                0x00000494       0x64 ./User_src/cr_startup_c.o
+                0x00000494                ResetISR
+ .text.NmiSR    0x000004f8        0x8 ./User_src/cr_startup_c.o
+                0x000004f8                NmiSR
+ .text.FaultISR
+                0x00000500        0x8 ./User_src/cr_startup_c.o
+                0x00000500                FaultISR
+ .text.IntDefaultHandler
+                0x00000508        0x8 ./User_src/cr_startup_c.o
+                0x00000508                IntDefaultHandler
+ .text.setupHardware
+                0x00000510       0x18 ./User_src/main.o
+ .text.main     0x00000528      0x2e0 ./User_src/main.o
+                0x00000528                main
+ .text.display_buffer_write_char
+                0x00000808       0xb0 ./User_src/lcd/lcd.o
+                0x00000808                display_buffer_write_char
+ .text.display_buffer_write_string
+                0x000008b8       0xd0 ./User_src/lcd/lcd.o
+                0x000008b8                display_buffer_write_string
+ .text.lcd_function
+                0x00000988       0x28 ./User_src/lcd/lcd.o
+                0x00000988                lcd_function
+ .text.display_buffer_goto_xy
+                0x000009b0       0x54 ./User_src/lcd/lcd.o
+                0x000009b0                display_buffer_goto_xy
+ .text.lcd_init_display
+                0x00000a04      0x148 ./User_src/lcd/lcd.o
+                0x00000a04                lcd_init_display
+ .text.display_init
+                0x00000b4c       0x10 ./User_src/lcd/lcd.o
+                0x00000b4c                display_init
+ .text.lcd_task
+                0x00000b5c      0x238 ./User_src/lcd/lcd.o
+                0x00000b5c                lcd_task
+ .text.lcd_rs_low
+                0x00000d94       0x24 ./User_src/lcd/lcd_port.o
+                0x00000d94                lcd_rs_low
+ .text.lcd_rs_high
+                0x00000db8       0x24 ./User_src/lcd/lcd_port.o
+                0x00000db8                lcd_rs_high
+ .text.lcd_strobe
+                0x00000ddc       0x68 ./User_src/lcd/lcd_port.o
+                0x00000ddc                lcd_strobe
+ .text.lcd_write_port
+                0x00000e44       0x3c ./User_src/lcd/lcd_port.o
+                0x00000e44                lcd_write_port
+ .text.lcd_write_4bit_mode
+                0x00000e80       0x6c ./User_src/lcd/lcd_port.o
+                0x00000e80                lcd_write_4bit_mode
+ .text.lcd_port_setup
+                0x00000eec      0x190 ./User_src/lcd/lcd_port.o
+                0x00000eec                lcd_port_setup
+ .text.lcd_delay_us
+                0x0000107c       0x3c ./User_src/lcd/lcd_port.o
+                0x0000107c                lcd_delay_us
+ .text.key_port_init
+                0x000010b8       0xac ./User_src/keyboard/keyboard.o
+                0x000010b8                key_port_init
+ .text.select_x
+                0x00001164      0x108 ./User_src/keyboard/keyboard.o
+                0x00001164                select_x
+ .text.row      0x0000126c       0xc0 ./User_src/keyboard/keyboard.o
+                0x0000126c                row
+ .text.key_catch
+                0x0000132c       0x3c ./User_src/keyboard/keyboard.o
+                0x0000132c                key_catch
+ .text.key_init
+                0x00001368        0xc ./User_src/keyboard/keyboard.o
+                0x00001368                key_init
+ .text.keyboard_task
+                0x00001374      0x18c ./User_src/keyboard/keyboard.o
+                0x00001374                keyboard_task
+ .text.init_emp_led
+                0x00001500       0xcc ./User_src/emp_led/emp_led.o
+                0x00001500                init_emp_led
+ .text.init_clk_system
+                0x000015cc      0x1b4 ./User_src/cpu/cpu.o
+                0x000015cc                init_clk_system
+ .text.enable_global_int
+                0x00001780        0xc ./User_src/cpu/cpu.o
+                0x00001780                enable_global_int
+ .text.disable_global_int
+                0x0000178c        0xc ./User_src/cpu/cpu.o
+                0x0000178c                disable_global_int
+ .text.init_alive_task
+                0x00001798       0x94 ./User_src/alive_task/alive_task.o
+                0x00001798                init_alive_task
+ .text.alive_task
+                0x0000182c       0x38 ./User_src/alive_task/alive_task.o
+                0x0000182c                alive_task
+ .text.init_adc
+                0x00001864       0x9c ./User_src/adc/adc.o
+                0x00001864                init_adc
+ .text.init_analog_input_task
+                0x00001900        0xc ./User_src/adc/adc.o
+                0x00001900                init_analog_input_task
+ .text.get_analog_input_value
+                0x0000190c       0x5c ./User_src/adc/adc.o
+                0x0000190c                get_analog_input_value
+ .text.set_analog_input_value
+                0x00001968       0x58 ./User_src/adc/adc.o
+                0x00001968                set_analog_input_value
+ .text.analog_input_task
+                0x000019c0       0x78 ./User_src/adc/adc.o
+                0x000019c0                analog_input_task
+ .text.vListInitialise
+                0x00001a38       0x48 ./FreeRTOS_src/list.o
+                0x00001a38                vListInitialise
+ .text.vListInitialiseItem
+                0x00001a80       0x1c ./FreeRTOS_src/list.o
+                0x00001a80                vListInitialiseItem
+ .text.vListInsertEnd
+                0x00001a9c       0x50 ./FreeRTOS_src/list.o
+                0x00001a9c                vListInsertEnd
+ .text.vListInsert
+                0x00001aec       0x74 ./FreeRTOS_src/list.o
+                0x00001aec                vListInsert
+ .text.vListRemove
+                0x00001b60       0x54 ./FreeRTOS_src/list.o
+                0x00001b60                vListRemove
+ .text.xQueueCreate
+                0x00001bb4       0xd4 ./FreeRTOS_src/queue.o
+                0x00001bb4                xQueueCreate
+ .text.xQueueCreateMutex
+                0x00001c88       0x98 ./FreeRTOS_src/queue.o
+                0x00001c88                xQueueCreateMutex
+ .text.xQueueGenericSend
+                0x00001d20      0x140 ./FreeRTOS_src/queue.o
+                0x00001d20                xQueueGenericSend
+ .text.xQueueGenericReceive
+                0x00001e60      0x1a8 ./FreeRTOS_src/queue.o
+                0x00001e60                xQueueGenericReceive
+ .text.prvCopyDataToQueue
+                0x00002008       0xc4 ./FreeRTOS_src/queue.o
+ .text.prvCopyDataFromQueue
+                0x000020cc       0x50 ./FreeRTOS_src/queue.o
+ .text.prvUnlockQueue
+                0x0000211c       0x98 ./FreeRTOS_src/queue.o
+ .text.prvIsQueueEmpty
+                0x000021b4       0x2c ./FreeRTOS_src/queue.o
+ .text.prvIsQueueFull
+                0x000021e0       0x30 ./FreeRTOS_src/queue.o
+ .text.xTaskCreate
+                0x00002210      0x17c ./FreeRTOS_src/tasks.o
+                0x00002210                xTaskCreate
+ .text.vTaskDelay
+                0x0000238c       0xb8 ./FreeRTOS_src/tasks.o
+                0x0000238c                vTaskDelay
+ .text.vTaskStartScheduler
+                0x00002444       0x6c ./FreeRTOS_src/tasks.o
+                0x00002444                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x000024b0       0x28 ./FreeRTOS_src/tasks.o
+                0x000024b0                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x000024d8      0x178 ./FreeRTOS_src/tasks.o
+                0x000024d8                xTaskResumeAll
+ .text.vTaskIncrementTick
+                0x00002650      0x154 ./FreeRTOS_src/tasks.o
+                0x00002650                vTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x000027a4       0xc8 ./FreeRTOS_src/tasks.o
+                0x000027a4                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x0000286c       0xd4 ./FreeRTOS_src/tasks.o
+                0x0000286c                vTaskPlaceOnEventList
+ .text.xTaskRemoveFromEventList
+                0x00002940       0xd8 ./FreeRTOS_src/tasks.o
+                0x00002940                xTaskRemoveFromEventList
+ .text.vTaskSetTimeOutState
+                0x00002a18       0x30 ./FreeRTOS_src/tasks.o
+                0x00002a18                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00002a48       0xa8 ./FreeRTOS_src/tasks.o
+                0x00002a48                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x00002af0       0x18 ./FreeRTOS_src/tasks.o
+                0x00002af0                vTaskMissedYield
+ .text.prvIdleTask
+                0x00002b08       0x10 ./FreeRTOS_src/tasks.o
+ .text.prvInitialiseTCBVariables
+                0x00002b18       0x78 ./FreeRTOS_src/tasks.o
+ .text.prvInitialiseTaskLists
+                0x00002b90       0xa4 ./FreeRTOS_src/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00002c34       0xb0 ./FreeRTOS_src/tasks.o
+ .text.prvAllocateTCBAndStack
+                0x00002ce4       0x68 ./FreeRTOS_src/tasks.o
+ .text.prvDeleteTCB
+                0x00002d4c       0x20 ./FreeRTOS_src/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00002d6c       0x28 ./FreeRTOS_src/tasks.o
+                0x00002d6c                xTaskGetCurrentTaskHandle
+ .text.vTaskPriorityInherit
+                0x00002d94       0xd8 ./FreeRTOS_src/tasks.o
+                0x00002d94                vTaskPriorityInherit
+ .text.vTaskPriorityDisinherit
+                0x00002e6c       0x90 ./FreeRTOS_src/tasks.o
+                0x00002e6c                vTaskPriorityDisinherit
+ .text.pxPortInitialiseStack
+                0x00002efc       0x58 ./FreeRTOS_portable/port.o
+                0x00002efc                pxPortInitialiseStack
+ .text.vPortSVCHandler
+                0x00002f54       0x20 ./FreeRTOS_portable/port.o
+                0x00002f54                vPortSVCHandler
+ .text.vPortStartFirstTask
+                0x00002f74       0x10 ./FreeRTOS_portable/port.o
+                0x00002f74                vPortStartFirstTask
+ .text.xPortStartScheduler
+                0x00002f84       0x54 ./FreeRTOS_portable/port.o
+                0x00002f84                xPortStartScheduler
+ .text.vPortYieldFromISR
+                0x00002fd8       0x18 ./FreeRTOS_portable/port.o
+                0x00002fd8                vPortYieldFromISR
+ .text.vPortEnterCritical
+                0x00002ff0       0x2c ./FreeRTOS_portable/port.o
+                0x00002ff0                vPortEnterCritical
+ .text.vPortExitCritical
+                0x0000301c       0x38 ./FreeRTOS_portable/port.o
+                0x0000301c                vPortExitCritical
+ .text.xPortPendSVHandler
+                0x00003054       0x3c ./FreeRTOS_portable/port.o
+                0x00003054                xPortPendSVHandler
+ .text.xPortSysTickHandler
+                0x00003090       0x38 ./FreeRTOS_portable/port.o
+                0x00003090                xPortSysTickHandler
+ .text.prvSetupTimerInterrupt
+                0x000030c8       0x2c ./FreeRTOS_portable/port.o
+ .text.pvPortMalloc
+                0x000030f4      0x194 ./FreeRTOS_MemMang/heap_2.o
+                0x000030f4                pvPortMalloc
+ .text.vPortFree
+                0x00003288       0x6c ./FreeRTOS_MemMang/heap_2.o
+                0x00003288                vPortFree
+ .text.__weak_main
+                0x000032f4       0x10 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+                0x000032f4                __main
+                0x000032f4                __weak_main
+ .text          0x00003304      0x36c c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x00003304                _start_module_ctype
+                0x000033d8                islower
+                0x000034c8                tolower
+                0x00003428                ispunct
+                0x00003450                isspace
+                0x00003664                _end_module_ctype
+                0x000034a0                isxdigit
+                0x000035e0                _ctype_init
+                0x00003478                isupper
+                0x00003338                isalpha
+                0x000033b0                isgraph
+                0x00003310                isalnum
+                0x00003400                isprint
+                0x00003540                _set_ctype_8859
+                0x00003388                isdigit
+                0x00003360                iscntrl
+                0x00003504                toupper
+ .text.memcpy   0x00003670       0x3c c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+                0x00003670                memcpy
+ .text.memset   0x000036ac       0x50 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+                0x000036ac                memset
+ .text.strncpy  0x000036fc       0x78 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+                0x000036fc                strncpy
+ .text._init_alloc
+                0x00003774       0x18 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x00003774                _init_alloc
+ *(.rodata*)
+ .rodata        0x0000378c        0x8 ./User_src/print/print.o
+ .rodata        0x00003794       0x54 ./User_src/main.o
+ .rodata.matrix.1246
+                0x000037e8        0xc ./User_src/keyboard/keyboard.o
+ .rodata        0x000037f4        0x8 ./FreeRTOS_src/tasks.o
+ .rodata.heapSTRUCT_SIZE
+                0x000037fc        0x2 ./FreeRTOS_MemMang/heap_2.o
+
+.glue_7         0x00003800        0x0 load address 0x000037fe
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00003800        0x0 load address 0x000037fe
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00003800        0x0 load address 0x000037fe
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00003800        0x0 load address 0x000037fe
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00003800                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00003800                __exidx_end = .
+                0x00003800                _etext = .
+
+.data           0x20000000      0x20c load address 0x000037fe
+                0x20000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.last_col_pointer
+                0x20000000        0x1 ./User_src/lcd/lcd.o
+                0x20000000                last_col_pointer
+ *fill*         0x20000001        0x3 00
+ .data.uxCriticalNesting
+                0x20000004        0x4 ./FreeRTOS_portable/port.o
+ .data          0x20000008      0x204 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+                0x20000008                __ctype
+                0x2000020c                _edata = .
+
+.bss            0x2000020c      0xad4 load address 0x00003a0a
+                0x2000020c                _bss = .
+ *(.bss*)
+ .bss.col_pointer
+                0x2000020c        0x1 ./User_src/lcd/lcd.o
+                0x2000020c                col_pointer
+ .bss.row_pointer
+                0x2000020d        0x1 ./User_src/lcd/lcd.o
+                0x2000020d                row_pointer
+ .bss.key_state.1262
+                0x2000020e        0x1 ./User_src/keyboard/keyboard.o
+ *fill*         0x2000020f        0x1 00
+ .bss.analog_input_value
+                0x20000210        0x2 ./User_src/adc/adc.o
+                0x20000210                analog_input_value
+ *fill*         0x20000212        0x2 00
+ .bss.pxCurrentTCB
+                0x20000214        0x4 ./FreeRTOS_src/tasks.o
+                0x20000214                pxCurrentTCB
+ .bss.uxTasksDeleted
+                0x20000218        0x4 ./FreeRTOS_src/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x2000021c        0x4 ./FreeRTOS_src/tasks.o
+ .bss.xTickCount
+                0x20000220        0x4 ./FreeRTOS_src/tasks.o
+ .bss.uxTopUsedPriority
+                0x20000224        0x4 ./FreeRTOS_src/tasks.o
+ .bss.uxTopReadyPriority
+                0x20000228        0x4 ./FreeRTOS_src/tasks.o
+ .bss.xSchedulerRunning
+                0x2000022c        0x4 ./FreeRTOS_src/tasks.o
+ .bss.uxSchedulerSuspended
+                0x20000230        0x4 ./FreeRTOS_src/tasks.o
+ .bss.uxMissedTicks
+                0x20000234        0x4 ./FreeRTOS_src/tasks.o
+ .bss.xMissedYield
+                0x20000238        0x4 ./FreeRTOS_src/tasks.o
+ .bss.xNumOfOverflows
+                0x2000023c        0x4 ./FreeRTOS_src/tasks.o
+ .bss.pxReadyTasksLists
+                0x20000240       0x64 ./FreeRTOS_src/tasks.o
+ .bss.xDelayedTaskList1
+                0x200002a4       0x14 ./FreeRTOS_src/tasks.o
+ .bss.xDelayedTaskList2
+                0x200002b8       0x14 ./FreeRTOS_src/tasks.o
+ .bss.pxDelayedTaskList
+                0x200002cc        0x4 ./FreeRTOS_src/tasks.o
+ .bss.pxOverflowDelayedTaskList
+                0x200002d0        0x4 ./FreeRTOS_src/tasks.o
+ .bss.xPendingReadyList
+                0x200002d4       0x14 ./FreeRTOS_src/tasks.o
+ .bss.xTasksWaitingTermination
+                0x200002e8       0x14 ./FreeRTOS_src/tasks.o
+ .bss.xSuspendedTaskList
+                0x200002fc       0x14 ./FreeRTOS_src/tasks.o
+ .bss.xHeapHasBeenInitialised.1202
+                0x20000310        0x4 ./FreeRTOS_MemMang/heap_2.o
+ .bss.xHeap     0x20000314      0x964 ./FreeRTOS_MemMang/heap_2.o
+ .bss.xStart    0x20000c78        0x8 ./FreeRTOS_MemMang/heap_2.o
+ .bss.xEnd      0x20000c80        0x8 ./FreeRTOS_MemMang/heap_2.o
+ *(COMMON)
+ COMMON         0x20000c88       0x10 ./User_src/main.o
+                0x20000c88                analog_input_value_mutex
+                0x20000c8c                lcd_buffer_mutex
+                0x20000c90                common_pins_mutex
+                0x20000c94                keyboard_input_queue
+ COMMON         0x20000c98       0x40 ./User_src/lcd/lcd.o
+                0x20000c98                display_buffer
+ COMMON         0x20000cd8        0x8 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+                0x20000cd8                __heaps
+                0x20000cdc                __end_of_heap
+                0x20000ce0                _ebss = .
+
+.cr_heap        0x20000ce0        0x0 load address 0x00003a0a
+                0x20000ce0                end = .
+                0x20000ce0                _pvHeapStart = .
+                0x20010000                _vRamTop = __top_RAM_64
+                0x2000fff0                _vStackTop = (_vRamTop - 0x10)
+OUTPUT(FreeRTOS-test.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0xf2c
+ .debug_abbrev  0x00000000       0x88 ./User_src/spi/spi.o
+ .debug_abbrev  0x00000088       0xb3 ./User_src/print/print.o
+ .debug_abbrev  0x0000013b       0xc7 ./User_src/cr_startup_c.o
+ .debug_abbrev  0x00000202       0xbd ./User_src/main.o
+ .debug_abbrev  0x000002bf      0x125 ./User_src/lcd/lcd.o
+ .debug_abbrev  0x000003e4       0x9e ./User_src/lcd/lcd_port.o
+ .debug_abbrev  0x00000482      0x10f ./User_src/keyboard/keyboard.o
+ .debug_abbrev  0x00000591       0x85 ./User_src/emp_led/emp_led.o
+ .debug_abbrev  0x00000616       0x67 ./User_src/cpu/cpu.o
+ .debug_abbrev  0x0000067d       0x8c ./User_src/alive_task/alive_task.o
+ .debug_abbrev  0x00000709       0xc7 ./User_src/adc/adc.o
+ .debug_abbrev  0x000007d0      0x18b ./FreeRTOS_src/croutine.o
+ .debug_abbrev  0x0000095b       0xc3 ./FreeRTOS_src/list.o
+ .debug_abbrev  0x00000a1e      0x171 ./FreeRTOS_src/queue.o
+ .debug_abbrev  0x00000b8f      0x16e ./FreeRTOS_src/tasks.o
+ .debug_abbrev  0x00000cfd      0x115 ./FreeRTOS_portable/port.o
+ .debug_abbrev  0x00000e12      0x11a ./FreeRTOS_MemMang/heap_2.o
+
+.debug_info     0x00000000     0x314c
+ .debug_info    0x00000000      0x140 ./User_src/spi/spi.o
+ .debug_info    0x00000140      0x1b9 ./User_src/print/print.o
+ .debug_info    0x000002f9      0x10b ./User_src/cr_startup_c.o
+ .debug_info    0x00000404      0x165 ./User_src/main.o
+ .debug_info    0x00000569      0x328 ./User_src/lcd/lcd.o
+ .debug_info    0x00000891      0x16e ./User_src/lcd/lcd_port.o
+ .debug_info    0x000009ff      0x229 ./User_src/keyboard/keyboard.o
+ .debug_info    0x00000c28       0xe4 ./User_src/emp_led/emp_led.o
+ .debug_info    0x00000d0c       0xce ./User_src/cpu/cpu.o
+ .debug_info    0x00000dda       0xdb ./User_src/alive_task/alive_task.o
+ .debug_info    0x00000eb5      0x1a1 ./User_src/adc/adc.o
+ .debug_info    0x00001056      0x4b7 ./FreeRTOS_src/croutine.o
+ .debug_info    0x0000150d      0x29d ./FreeRTOS_src/list.o
+ .debug_info    0x000017aa      0x8af ./FreeRTOS_src/queue.o
+ .debug_info    0x00002059      0xcb8 ./FreeRTOS_src/tasks.o
+ .debug_info    0x00002d11      0x1d7 ./FreeRTOS_portable/port.o
+ .debug_info    0x00002ee8      0x264 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_line     0x00000000     0x46a3
+ .debug_line    0x00000000      0x46f ./User_src/spi/spi.o
+ .debug_line    0x0000046f      0x568 ./User_src/print/print.o
+ .debug_line    0x000009d7       0x85 ./User_src/cr_startup_c.o
+ .debug_line    0x00000a5c      0x5bc ./User_src/main.o
+ .debug_line    0x00001018      0x4ea ./User_src/lcd/lcd.o
+ .debug_line    0x00001502      0x1bd ./User_src/lcd/lcd_port.o
+ .debug_line    0x000016bf      0x4ba ./User_src/keyboard/keyboard.o
+ .debug_line    0x00001b79      0x420 ./User_src/emp_led/emp_led.o
+ .debug_line    0x00001f99      0x12e ./User_src/cpu/cpu.o
+ .debug_line    0x000020c7      0x45a ./User_src/alive_task/alive_task.o
+ .debug_line    0x00002521      0x4e5 ./User_src/adc/adc.o
+ .debug_line    0x00002a06      0x42e ./FreeRTOS_src/croutine.o
+ .debug_line    0x00002e34      0x3c1 ./FreeRTOS_src/list.o
+ .debug_line    0x000031f5      0x5c6 ./FreeRTOS_src/queue.o
+ .debug_line    0x000037bb      0x72a ./FreeRTOS_src/tasks.o
+ .debug_line    0x00003ee5      0x41c ./FreeRTOS_portable/port.o
+ .debug_line    0x00004301      0x3a2 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_macinfo  0x00000000   0x115be0
+ .debug_macinfo
+                0x00000000    0x1d218 ./User_src/spi/spi.o
+ .debug_macinfo
+                0x0001d218    0x1d516 ./User_src/print/print.o
+ .debug_macinfo
+                0x0003a72e      0xc92 ./User_src/cr_startup_c.o
+ .debug_macinfo
+                0x0003b3c0    0x1c1eb ./User_src/main.o
+ .debug_macinfo
+                0x000575ab     0x48d0 ./User_src/lcd/lcd.o
+ .debug_macinfo
+                0x0005be7b    0x1a96c ./User_src/lcd/lcd_port.o
+ .debug_macinfo
+                0x000767e7    0x1d2ae ./User_src/keyboard/keyboard.o
+ .debug_macinfo
+                0x00093a95    0x1c09e ./User_src/emp_led/emp_led.o
+ .debug_macinfo
+                0x000afb33    0x1adf1 ./User_src/cpu/cpu.o
+ .debug_macinfo
+                0x000ca924    0x1d2a5 ./User_src/alive_task/alive_task.o
+ .debug_macinfo
+                0x000e7bc9    0x1d242 ./User_src/adc/adc.o
+ .debug_macinfo
+                0x00104e0b     0x2ee5 ./FreeRTOS_src/croutine.o
+ .debug_macinfo
+                0x00107cf0     0x2741 ./FreeRTOS_src/list.o
+ .debug_macinfo
+                0x0010a431     0x3133 ./FreeRTOS_src/queue.o
+ .debug_macinfo
+                0x0010d564     0x2faf ./FreeRTOS_src/tasks.o
+ .debug_macinfo
+                0x00110513     0x2ab6 ./FreeRTOS_portable/port.o
+ .debug_macinfo
+                0x00112fc9     0x2c17 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_frame    0x00000000      0xf60
+ .debug_frame   0x00000000       0x6c ./User_src/spi/spi.o
+ .debug_frame   0x0000006c       0x70 ./User_src/print/print.o
+ .debug_frame   0x000000dc       0x78 ./User_src/cr_startup_c.o
+ .debug_frame   0x00000154       0x68 ./User_src/main.o
+ .debug_frame   0x000001bc       0xec ./User_src/lcd/lcd.o
+ .debug_frame   0x000002a8       0xcc ./User_src/lcd/lcd_port.o
+ .debug_frame   0x00000374       0xbc ./User_src/keyboard/keyboard.o
+ .debug_frame   0x00000430       0x48 ./User_src/emp_led/emp_led.o
+ .debug_frame   0x00000478       0x5c ./User_src/cpu/cpu.o
+ .debug_frame   0x000004d4       0x4c ./User_src/alive_task/alive_task.o
+ .debug_frame   0x00000520       0xa8 ./User_src/adc/adc.o
+ .debug_frame   0x000005c8       0xf0 ./FreeRTOS_src/croutine.o
+ .debug_frame   0x000006b8       0x9c ./FreeRTOS_src/list.o
+ .debug_frame   0x00000754      0x27c ./FreeRTOS_src/queue.o
+ .debug_frame   0x000009d0      0x430 ./FreeRTOS_src/tasks.o
+ .debug_frame   0x00000e00      0x110 ./FreeRTOS_portable/port.o
+ .debug_frame   0x00000f10       0x50 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_loc      0x00000000     0x1903
+ .debug_loc     0x00000000       0xa5 ./User_src/spi/spi.o
+ .debug_loc     0x000000a5       0xa5 ./User_src/print/print.o
+ .debug_loc     0x0000014a       0xb8 ./User_src/cr_startup_c.o
+ .debug_loc     0x00000202       0x99 ./User_src/main.o
+ .debug_loc     0x0000029b      0x175 ./User_src/lcd/lcd.o
+ .debug_loc     0x00000410      0x15d ./User_src/lcd/lcd_port.o
+ .debug_loc     0x0000056d      0x13e ./User_src/keyboard/keyboard.o
+ .debug_loc     0x000006ab       0x6e ./User_src/emp_led/emp_led.o
+ .debug_loc     0x00000719       0x8d ./User_src/cpu/cpu.o
+ .debug_loc     0x000007a6       0x6e ./User_src/alive_task/alive_task.o
+ .debug_loc     0x00000814      0x107 ./User_src/adc/adc.o
+ .debug_loc     0x0000091b      0x181 ./FreeRTOS_src/croutine.o
+ .debug_loc     0x00000a9c      0x113 ./FreeRTOS_src/list.o
+ .debug_loc     0x00000baf      0x44c ./FreeRTOS_src/queue.o
+ .debug_loc     0x00000ffb      0x72a ./FreeRTOS_src/tasks.o
+ .debug_loc     0x00001725      0x170 ./FreeRTOS_portable/port.o
+ .debug_loc     0x00001895       0x6e ./FreeRTOS_MemMang/heap_2.o
+
+.debug_pubnames
+                0x00000000      0xb1e
+ .debug_pubnames
+                0x00000000       0x46 ./User_src/spi/spi.o
+ .debug_pubnames
+                0x00000046       0x36 ./User_src/print/print.o
+ .debug_pubnames
+                0x0000007c       0x5d ./User_src/cr_startup_c.o
+ .debug_pubnames
+                0x000000d9       0x8a ./User_src/main.o
+ .debug_pubnames
+                0x00000163       0xf7 ./User_src/lcd/lcd.o
+ .debug_pubnames
+                0x0000025a       0x8f ./User_src/lcd/lcd_port.o
+ .debug_pubnames
+                0x000002e9       0x66 ./User_src/keyboard/keyboard.o
+ .debug_pubnames
+                0x0000034f       0x34 ./User_src/emp_led/emp_led.o
+ .debug_pubnames
+                0x00000383       0x53 ./User_src/cpu/cpu.o
+ .debug_pubnames
+                0x000003d6       0x35 ./User_src/alive_task/alive_task.o
+ .debug_pubnames
+                0x0000040b       0x9d ./User_src/adc/adc.o
+ .debug_pubnames
+                0x000004a8       0x96 ./FreeRTOS_src/croutine.o
+ .debug_pubnames
+                0x0000053e       0x71 ./FreeRTOS_src/list.o
+ .debug_pubnames
+                0x000005af      0x18c ./FreeRTOS_src/queue.o
+ .debug_pubnames
+                0x0000073b      0x2a5 ./FreeRTOS_src/tasks.o
+ .debug_pubnames
+                0x000009e0      0x10d ./FreeRTOS_portable/port.o
+ .debug_pubnames
+                0x00000aed       0x31 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_aranges  0x00000000      0x578
+ .debug_aranges
+                0x00000000       0x30 ./User_src/spi/spi.o
+ .debug_aranges
+                0x00000030       0x30 ./User_src/print/print.o
+ .debug_aranges
+                0x00000060       0x38 ./User_src/cr_startup_c.o
+ .debug_aranges
+                0x00000098       0x30 ./User_src/main.o
+ .debug_aranges
+                0x000000c8       0x50 ./User_src/lcd/lcd.o
+ .debug_aranges
+                0x00000118       0x50 ./User_src/lcd/lcd_port.o
+ .debug_aranges
+                0x00000168       0x48 ./User_src/keyboard/keyboard.o
+ .debug_aranges
+                0x000001b0       0x28 ./User_src/emp_led/emp_led.o
+ .debug_aranges
+                0x000001d8       0x30 ./User_src/cpu/cpu.o
+ .debug_aranges
+                0x00000208       0x28 ./User_src/alive_task/alive_task.o
+ .debug_aranges
+                0x00000230       0x40 ./User_src/adc/adc.o
+ .debug_aranges
+                0x00000270       0x50 ./FreeRTOS_src/croutine.o
+ .debug_aranges
+                0x000002c0       0x40 ./FreeRTOS_src/list.o
+ .debug_aranges
+                0x00000300       0xb8 ./FreeRTOS_src/queue.o
+ .debug_aranges
+                0x000003b8      0x128 ./FreeRTOS_src/tasks.o
+ .debug_aranges
+                0x000004e0       0x70 ./FreeRTOS_portable/port.o
+ .debug_aranges
+                0x00000550       0x28 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_ranges   0x00000000      0x4f0
+ .debug_ranges  0x00000000       0x28 ./User_src/spi/spi.o
+ .debug_ranges  0x00000028       0x28 ./User_src/print/print.o
+ .debug_ranges  0x00000050       0x30 ./User_src/cr_startup_c.o
+ .debug_ranges  0x00000080       0x28 ./User_src/main.o
+ .debug_ranges  0x000000a8       0x48 ./User_src/lcd/lcd.o
+ .debug_ranges  0x000000f0       0x48 ./User_src/lcd/lcd_port.o
+ .debug_ranges  0x00000138       0x40 ./User_src/keyboard/keyboard.o
+ .debug_ranges  0x00000178       0x20 ./User_src/emp_led/emp_led.o
+ .debug_ranges  0x00000198       0x28 ./User_src/cpu/cpu.o
+ .debug_ranges  0x000001c0       0x20 ./User_src/alive_task/alive_task.o
+ .debug_ranges  0x000001e0       0x38 ./User_src/adc/adc.o
+ .debug_ranges  0x00000218       0x48 ./FreeRTOS_src/croutine.o
+ .debug_ranges  0x00000260       0x38 ./FreeRTOS_src/list.o
+ .debug_ranges  0x00000298       0xb0 ./FreeRTOS_src/queue.o
+ .debug_ranges  0x00000348      0x120 ./FreeRTOS_src/tasks.o
+ .debug_ranges  0x00000468       0x68 ./FreeRTOS_portable/port.o
+ .debug_ranges  0x000004d0       0x20 ./FreeRTOS_MemMang/heap_2.o
+
+.debug_str      0x00000000     0x158a
+ .debug_str     0x00000000      0x11b ./User_src/spi/spi.o
+                                0x154 (size before relaxing)
+ .debug_str     0x0000011b       0x44 ./User_src/print/print.o
+                                0x153 (size before relaxing)
+ .debug_str     0x0000015f       0xc3 ./User_src/cr_startup_c.o
+                                 0xe1 (size before relaxing)
+ .debug_str     0x00000222       0xbe ./User_src/main.o
+                                0x1b8 (size before relaxing)
+ .debug_str     0x000002e0      0x111 ./User_src/lcd/lcd.o
+                                0x282 (size before relaxing)
+ .debug_str     0x000003f1       0x88 ./User_src/lcd/lcd_port.o
+                                0x188 (size before relaxing)
+ .debug_str     0x00000479       0x69 ./User_src/keyboard/keyboard.o
+                                0x1ca (size before relaxing)
+ .debug_str     0x000004e2       0x38 ./User_src/emp_led/emp_led.o
+                                0x145 (size before relaxing)
+ .debug_str     0x0000051a       0x4b ./User_src/cpu/cpu.o
+                                0x140 (size before relaxing)
+ .debug_str     0x00000565       0x34 ./User_src/alive_task/alive_task.o
+                                0x14d (size before relaxing)
+ .debug_str     0x00000599       0x6f ./User_src/adc/adc.o
+                                0x1fb (size before relaxing)
+ .debug_str     0x00000608      0x34b ./FreeRTOS_src/croutine.o
+                                0x40d (size before relaxing)
+ .debug_str     0x00000953       0xaa ./FreeRTOS_src/list.o
+                                0x20a (size before relaxing)
+ .debug_str     0x000009fd      0x3b4 ./FreeRTOS_src/queue.o
+                                0x552 (size before relaxing)
+ .debug_str     0x00000db1      0x5af ./FreeRTOS_src/tasks.o
+                                0x7e6 (size before relaxing)
+ .debug_str     0x00001360      0x123 ./FreeRTOS_portable/port.o
+                                0x1fd (size before relaxing)
+ .debug_str     0x00001483      0x107 ./FreeRTOS_MemMang/heap_2.o
+                                0x1e3 (size before relaxing)
+
+.comment        0x00000000      0x408
+ .comment       0x00000000       0x2b ./User_src/spi/spi.o
+ .comment       0x0000002b       0x2b ./User_src/print/print.o
+ .comment       0x00000056       0x2b ./User_src/cr_startup_c.o
+ .comment       0x00000081       0x2b ./User_src/main.o
+ .comment       0x000000ac       0x2b ./User_src/lcd/lcd.o
+ .comment       0x000000d7       0x2b ./User_src/lcd/lcd_port.o
+ .comment       0x00000102       0x2b ./User_src/keyboard/keyboard.o
+ .comment       0x0000012d       0x2b ./User_src/emp_led/emp_led.o
+ .comment       0x00000158       0x2b ./User_src/cpu/cpu.o
+ .comment       0x00000183       0x2b ./User_src/alive_task/alive_task.o
+ .comment       0x000001ae       0x2b ./User_src/adc/adc.o
+ .comment       0x000001d9       0x2b ./FreeRTOS_src/croutine.o
+ .comment       0x00000204       0x2b ./FreeRTOS_src/list.o
+ .comment       0x0000022f       0x2b ./FreeRTOS_src/queue.o
+ .comment       0x0000025a       0x2b ./FreeRTOS_src/tasks.o
+ .comment       0x00000285       0x2b ./FreeRTOS_portable/port.o
+ .comment       0x000002b0       0x2b ./FreeRTOS_MemMang/heap_2.o
+ .comment       0x000002db       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .comment       0x00000306       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .comment       0x00000331       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .comment       0x0000035c       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .comment       0x00000387       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .comment       0x000003b2       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .comment       0x000003dd       0x2b c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 ./User_src/spi/spi.o
+ .ARM.attributes
+                0x00000031       0x31 ./User_src/print/print.o
+ .ARM.attributes
+                0x00000062       0x31 ./User_src/cr_startup_c.o
+ .ARM.attributes
+                0x00000093       0x31 ./User_src/main.o
+ .ARM.attributes
+                0x000000c4       0x31 ./User_src/lcd/lcd.o
+ .ARM.attributes
+                0x000000f5       0x31 ./User_src/lcd/lcd_port.o
+ .ARM.attributes
+                0x00000126       0x31 ./User_src/keyboard/keyboard.o
+ .ARM.attributes
+                0x00000157       0x31 ./User_src/emp_led/emp_led.o
+ .ARM.attributes
+                0x00000188       0x31 ./User_src/cpu/cpu.o
+ .ARM.attributes
+                0x000001b9       0x31 ./User_src/alive_task/alive_task.o
+ .ARM.attributes
+                0x000001ea       0x31 ./User_src/adc/adc.o
+ .ARM.attributes
+                0x0000021b       0x31 ./FreeRTOS_src/croutine.o
+ .ARM.attributes
+                0x0000024c       0x31 ./FreeRTOS_src/list.o
+ .ARM.attributes
+                0x0000027d       0x31 ./FreeRTOS_src/queue.o
+ .ARM.attributes
+                0x000002ae       0x31 ./FreeRTOS_src/tasks.o
+ .ARM.attributes
+                0x000002df       0x31 ./FreeRTOS_portable/port.o
+ .ARM.attributes
+                0x00000310       0x31 ./FreeRTOS_MemMang/heap_2.o
+ .ARM.attributes
+                0x00000341       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x00000372       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(ctype.o)
+ .ARM.attributes
+                0x000003a3       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x000003d4       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(memset.o)
+ .ARM.attributes
+                0x00000405       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x00000436       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(strncpy.o)
+ .ARM.attributes
+                0x00000467       0x31 c:/code_red/redsuite3_3.3/tools/bin/../lib/gcc/arm-none-eabi/4.3.3/../../../../arm-none-eabi/lib/thumb2\libcr_c.a(__init_alloc.o)
